@@ -1,0 +1,89 @@
+<html>
+<head>
+<title>2D wave front set: simple planar shapes </title>
+<meta http-equiv="content-type" content="text/html:charset=UTF-8">
+<link rel="Shortcut Icon" href="favicon.ico">
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+</head>
+
+<body text=#4169E1 bgcolor=#FFFFF0 vlink=#0000CD link=#0000CD>
+<font face="Times New Roman">
+
+<h2>2D wave front set: simple planar shapes (in progress)</h2>
+Let \(h>0\) be the semiclassical parameter. 
+The FBI (Fourier-Bros-Iagolnitzer) transform of an \(n\)-dimensional tempered distribution \(u \in \mathscr{S}^\prime(\mathbb{R}^n)\) is defined by 
+
+\[
+T_hu(x;\xi)
+:=
+2^{-n/2}
+(\pi h)^{-3n/4}
+\int_{\mathbb{R}^n}
+e^{-i(x-y)\cdot\xi/h-\lvert{x-y}\rvert^2/2h}
+u(y)
+dy,
+\] 
+
+where \((x,\xi) \in T^\ast\mathbb{R}^n\simeq\mathbb{R}^n\times\mathbb{R}^n\). 
+It is well-known that if \(u\) is independent of \(h>0\), 
+then the wave front set of \(u\) is characterized by its FBI transform. 
+In fact it follows that \((x_0,\xi_0) \in T^\ast\mathbb{R}^n\setminus0\) 
+does not belong to \(\operatorname{WF}(u)\) if and only if 
+
+\[
+T_hu(x;\xi)=\mathcal{O}(h^\infty)
+\quad
+(h \downarrow0)
+\]
+
+uniformly near \((x_0,\xi_0)\). Note that a wave front set is conic in \(\xi\) and independent of the size of \(\xi\). We are trying to detect the wave front sets of 2D distributions using MATLAB and the FBI transform. For \(u(x,y) \in \mathscr{S}^\prime(\mathbb{R}^2)\) we compute 
+
+\[
+T_hu(x,y;\lambda\cos\theta,\lambda\sin\theta)
+=
+2^{-1}(\pi h)^{-3/2}
+\iint_{\mathbb{R}^2}
+e^{i\lambda(p\cos\theta+q\sin\theta)/h-(p^2+q^2)/2h}
+u(x+p,y+q)
+dpdq
+\] 
+
+where \(\lambda\) is the size of the frequency.  
+
+<br>
+<br>
+<table border>
+<tr>
+<td align=center>
+<legend>Square (<a href="./WF/square.m" target="_blank">square.m</a>)<legend>
+<a href="./WF/wf_square.png" target="_blank"><img src="./WF/wf_square.png" height="300"></a> 
+</tr>
+
+<tr>
+<td align=center>
+<legend>Right-angled isosceles triangle (<a href="./WF/triangle.m" target="_blank">triangle.m</a>)<legend>
+<a href="./WF/wf_triangle.png" target="_blank"><img src="./WF/wf_triangle.png" height="300"></a> 
+</td>
+</tr>
+
+<tr>
+<td align=center>
+<legend>Circle (<a href="./WF/singsuppcircle.m" target="_blank">singsuppcircle.m</a>)<legend>
+<a href="./WF/singsupp_circle.png" target="_blank"><img src="./WF/singsupp_circle.png" height="300"></a>
+</td>
+</td>
+</tr>
+
+</table>
+
+</font>
+</body>
+</html>
+
+
+
+
+
+

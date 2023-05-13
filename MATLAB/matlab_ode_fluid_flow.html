@@ -1,0 +1,63 @@
+<html>
+<head>
+<title>The two-dimensional steady incompressible irrotational fluid flow</title>
+<meta http-equiv="content-type" content="text/html:charset=UTF-8">
+<link rel="Shortcut Icon" href="favicon.ico">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+</head>
+
+<body text=#4169E1 bgcolor=#FFFFF0 vlink=#0000CD link=#0000CD>
+<font face="Times New Roman">
+
+<center>
+<h2>
+The two-dimensional steady incompressible irrotational fluid flow
+</h2>
+</center>
+
+In the present page we numerically solve the \(2\times2\) system of ordinary differential equations of the form 
+
+\[
+\frac{d}{dt}
+\begin{bmatrix}
+x\\ y
+\end{bmatrix}
+=
+\begin{bmatrix}
+x+2y \\ 2x-y
+\end{bmatrix}. 
+\]
+
+The solutions to this system are the integral curves of the planar vector field 
+\((x+2y,2x-y)\) in the \(xy\)-plane. 
+In terms of classical mechanics solutions to this system describes 
+the streamline of the two-dimensional steady incompressible irrotational fluid flow 
+given by a complex velocity potential 
+
+\[
+W(z)
+=
+\frac{(1-2i)z^2}{2}, 
+\quad
+z=x+iy.
+\] 
+
+In this case the streamlines coinside with both streaklines and particle paths 
+since the flow is steady. 
+
+<br>
+
+By using MATLAB we draw the vector field amd its integral curves. 
+See 
+<a href="./ode/fluid_flow.m" target="_blank">fluid_flow.m</a> 
+for the detail. 
+
+<center>
+<a href="./ode/fluid_flow.png" target="_blank"><img src="./ode/fluid_flow.png" height="500"></a> 
+</center>
+ 
+</font>
+</body>
+</html>

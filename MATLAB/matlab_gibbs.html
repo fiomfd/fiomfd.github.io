@@ -1,0 +1,173 @@
+<html>
+<head>
+<title>Gibbs phenomenon of Fourier series</title>
+<meta http-equiv="content-type" content="text/html:charset=UTF-8">
+<link rel="Shortcut Icon" href="favicon.ico">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+</head>
+
+<body text=#4169E1 bgcolor=#FFFFF0 vlink=#0000CD link=#0000CD>
+<font face="Times New Roman">
+
+<h2>
+Gibbs phenomenon of Fourier series
+</h2>
+</center>
+
+Let \(f(x)\) be an appropriate one-periodic function of \(x\in\mathbb{R}\). 
+Its fourier series is given by 
+
+\[
+f(x)
+\sim
+\sum_{n=-\infty}^\infty
+C_ne^{2\pi i nx},
+\quad
+C_n
+:=
+\int_0^1
+e^{-2\pi i nx}
+f(x)
+dx.
+\]
+
+The \(N\)-th partial sum of the series is denoted by 
+
+\[
+S_N(x)
+:=
+\sum_{n=-N}^N
+C_ne^{2\pi i nx}. 
+\]
+
+The well-known facts on the behavior of \(S_N\) as (\(N\rightarrow\infty\)) 
+are the following:
+
+<ul>
+<li>
+There exists a continuous one-periodic function \(f(x)\) such that 
+\(S_N(0)\rightarrow\infty\) (\(N\rightarrow\infty\)). 
+This example shows that the continuity does not guarantee 
+even the pointwise convergence of Fourier series. 
+
+<li>
+However, if \(f(x)\) is H&ouml;rder continuous, that is, 
+there exists an exponent \(\alpha\in(0,1]\) such that 
+\(\lvert{f(x)-f(y)}\rvert\leqq\lvert{x-y}\rvert^\alpha\) 
+for any \(x,y\in\mathbb{R}\), then \(S_N(x)\) converges to \(f(x)\) 
+uniformly in \(x\in\mathbb[0,1]\):
+
+\[
+\max_{x\in[0,1]}
+\lvert{S_N(x)-f(x)}\rvert
+\rightarrow 
+0
+\quad
+(N\rightarrow\infty). 
+\]   
+
+This results show that if \(f(x)\) is a little bit smoother than continuous functions, 
+then its Fourier series converges to \(f(x)\) uniformly. 
+In particular, 
+
+<li>
+Suppose that \(f(x)\) is piecewise \(C^1\) one-periodic funtion. 
+The discontinuous points of \(f(x)\) in \([0,1)\) is denoted by 
+
+\[0\leqq p_1 < \dotsb < p_m <1.\] 
+
+Set 
+
+\[
+p_0:=p_m-1, 
+\quad
+p_{m+1}:=p_1+1, 
+\quad
+\delta_0
+:=\frac{\min\{p_1-p_0,\dotsc,p_m-p_{m-1}\}}{2}.
+\] 
+
+Then for any \(\delta\in(0,\delta_0]\) 
+
+\[
+\max_{x \in I(\delta)}
+\lvert{S_N(x)-f(x)}\rvert
+\rightarrow 
+0
+\quad
+(N\rightarrow\infty),
+\quad
+I(\delta)
+:=
+[0,1]
+\setminus
+\left(
+\bigcup_{k=0}^{m+1}
+(p_k-\delta,p_k+\delta)
+\right),
+\]
+
+\[
+S_N(p_k)
+\rightarrow
+\frac{f(p_k-0)+f(p_k+0)}{2}
+\quad
+(N\rightarrow\infty),
+\quad
+k=1,\dotsc,m.
+\]
+
+Moreover \(S_N(x)\) vibrates violently near \(x=p_k\). 
+This is said to be Gibbs phenomenon. 
+
+</ul>
+
+A MATLAB code 
+<a href="./gibbs/gibbs.m" target="_blank">gibbs.m</a>.  
+creates the animation of the Gibbs phenomenon of 
+the Fourier series of one-periodic piecewise \(C^1\) functions given by 
+
+\[
+f(x)
+:=
+\begin{cases}
+1 
+&\ (n \leqq x \leqq n+1/2),
+\\
+0
+&\ (n+1/2 < x < n+1),
+\end{cases}
+\quad
+g(x)
+:=
+x-n 
+\quad (n \leqq x < n+1),
+\quad
+n\in\mathbb{Z}.
+\]
+
+Their Fourier series are given by 
+
+\[
+f(x)
+\sim
+\sum_{l=0}^\infty
+\frac{2\sin\bigl(2\pi(2l+1)x\bigr)}{\pi(2l+1)},
+\quad
+g(x)
+\sim
+1
+-
+\sum_{n=1}^\infty
+\frac{\sin(2\pi nx)}{\pi n}.
+\]
+
+<center>
+<video src="./gibbs/gibbs.mp4" controls height="300"></video>
+</center>
+  
+</font>
+</body>
+</html>

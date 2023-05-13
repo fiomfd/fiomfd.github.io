@@ -1,0 +1,99 @@
+<html>
+<head>
+<title>Convergence and divergence of Taylor expansions</title>
+<meta http-equiv="content-type" content="text/html:charset=UTF-8">
+<link rel="Shortcut Icon" href="favicon.ico">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+</head>
+
+<body text=#4169E1 bgcolor=#FFFFF0 vlink=#0000CD link=#0000CD>
+<font face="Times New Roman">
+
+<center>
+<h2>
+Convergence and divergence of Taylor expansions
+</h2>
+</center>
+
+The following Taylor expansions of functions of one-variable \(x \in \mathbb{R}\) are well-known:
+
+\begin{align*}
+  (1+x)^\alpha
+& =
+  \sum_{n=0}^\infty
+  \begin{pmatrix}\alpha \\ n\end{pmatrix}
+  x^n,
+\\
+  \begin{pmatrix}\alpha \\ n\end{pmatrix}
+& =
+  \begin{cases}
+  \dfrac{\alpha\cdot(\alpha-1)\cdot \dotsb \cdot(\alpha-n+1) }{n!}
+  &\ (n=1,2,3,\dotsc),
+  \\
+  1
+  &\ (n=0),
+  \end{cases}
+  \quad
+  \alpha\in\mathbb{C},    
+\end{align*}
+
+If \(\alpha=0,1,2,\dotsc\), then \((1+x)^\alpha\) is a polynomial of order \(\alpha\), 
+
+\[
+\begin{pmatrix}\alpha \\ n\end{pmatrix}
+=
+\begin{cases}
+\dfrac{\alpha!}{(\alpha-1)!n!}
+&\ (n=0,\dotsc,\alpha),
+\\
+0
+&\ (n>\alpha),
+\end{cases}
+\]
+
+and the above formula is the binomial theorem. 
+So we consider the case of \(\alpha\ne0,1,2,\dotsc\) below. 
+The power series converges uniformly in any closed interval \([a,b]\) contained in the open interval \((-1,1)\), and diverses outside the closed interval \([-1.1]\). 
+The behavior at \(x=\pm1\) of the series depends on \(\alpha\). 
+Some series converge and another series diverge. 
+A MATLAB code 
+<a href="./taylor/taylorpower.m" target="_blank">taylorpower.m</a>.  
+creates the animation of the convergence and the divergence of the Taylor series of the following functions: 
+
+\begin{align*}
+  (1+x)^{-1}
+& =
+  \sum_{n=0}^\infty
+  (-1)^{n}
+  x^n,
+\\
+  (1+x)^{-1/2}
+& =
+  \sum_{n=0}^\infty
+  \frac{(-1)^{n}(2n)!}{2^{2n}(n!)^2}
+  x^n, 
+\\
+  \log(1+x)
+& =
+  \sum_{n=1}^\infty
+  \frac{(-1)^{n-1}}{n}
+  x^n,
+\\
+  (1+x)^{1/2}
+& =
+  1
+  +
+  \sum_{n=1}^\infty
+  \frac{(-1)^{n-1}(2n-2)!}{2^{2n-1}(n-1)!n!}
+  x^n
+\end{align*}
+
+<center>
+<video src="./taylor/taylor.mp4" controls height="300"></video>
+</center>
+  
+</font>
+</body>
+</html>

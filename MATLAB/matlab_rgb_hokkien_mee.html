@@ -1,0 +1,71 @@
+<html>
+<head>
+<title>Image processing of RGB images: hokkien mee</title>
+<meta http-equiv="content-type" content="text/html:charset=UTF-8">
+<link rel="Shortcut Icon" href="favicon.ico">
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+</head>
+
+<body text=#4169E1 bgcolor=#FFFFF0 vlink=#0000CD link=#0000CD>
+<font face="Times New Roman">
+
+<center>
+<h2>
+Image processing of RGB images
+<br>
+fried hokkien prawn mee
+</h2>
+</center>
+
+In this page we split an RGB image into R, G, and B grayscale images, 
+process them and combine them to obtain a new processed RGB image. 
+See 
+<a href="./rgb_hokkien_mee/rgb_imsplit_hokkien_mee.m" target="_blank">rgb_imsplit_hokkien_mee.m</a>, 
+<a href="./rgb_hokkien_mee/rgb_svd_hokkien_mee.m" target="_blank">rgb_svd_hokkien_mee.m</a> 
+and 
+<a href="./rgb_hokkien_mee/rgb_fk4_hokkien_mee.m" target="_blank">rgb_fk4_hokkien_mee.m</a>
+for the detail. 
+
+<br>
+<br>
+<center>
+<table border>
+
+<tr>
+<td align=center>
+<legend>Reading RGB Image</legend>
+<a href="./rgb_hokkien_mee/hokkien_mee.jpg" target="_blank"><img src="./rgb_hokkien_mee/hokkien_mee.jpg" height="150"></a> 
+</td>
+<td align=center>
+<legend>Splitting RGB into R, G and B</legend>
+<a href="./rgb_hokkien_mee/rgb_imsplit_hokkien_mee.png" target="_blank"><img src="./rgb_hokkien_mee/rgb_imsplit_hokkien_mee.png" height="280"></a> 
+</td>
+</tr>
+
+<tr>
+<td align=center colspan="2">
+<legend>Low rank approximation</legend>
+<a href="./rgb_hokkien_mee/rgb_svd_hokkien_mee.png" target="_blank"><img src="./rgb_hokkien_mee/rgb_svd_hokkien_mee.png" width="700"></a> 
+</td>
+</tr>
+
+<tr>
+<td align=center colspan="2">
+<legend>Multiresolution Decomposition (the Fej&eacute;r-Korovkin 4 wavelet)</legend>
+<a href="./rgb_hokkien_mee/rgb_fk4_hokkien_mee.png" target="_blank"><img src="./rgb_hokkien_mee/rgb_fk4_hokkien_mee.png" width="700"></a> 
+</td>
+</tr>
+
+</table>
+</center>
+
+</font>
+</body>
+</html>
+
+
+
+
+
+

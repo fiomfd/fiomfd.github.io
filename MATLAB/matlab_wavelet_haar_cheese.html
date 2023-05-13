@@ -1,0 +1,182 @@
+<html>
+<head>
+<title>Multiresolution Analysis and Approximation of Audio Signal: the Haar wavelet</title>
+<meta http-equiv="content-type" content="text/html:charset=UTF-8">
+<link rel="Shortcut Icon" href="favicon.ico">
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+</head>
+
+<body text=#4169E1 bgcolor=#FFFFF0 vlink=#0000CD link=#0000CD>
+<font face="Times New Roman">
+
+<h2>Multiresolution Analysis and Approximation of Audio Signal: the Haar wavelet</h2>
+
+<h3>
+Here we show a finite discrete signal and its multi-resolution analysis of level p=1,2,3,4,5,6,7,8,9.10 based on the Haar wavelet, which is also called the Daubechies 1 wavelet and the simplest wavelet function. A sigal is an element of finite dimensional vector space of real numbers, 
+which is decomposed as a direct sum of subspaces the form 
+
+<br>
+<br>
+<center>
+R<sup>N</sup>
+=
+(level p approximation)
++
+(level p detail)
++
+...
++
+(level 2 detail)
++
+(level 1 detail).
+</center>
+<br>
+
+Higher level subspace consist of elements of lower frequcny, 
+and the approximation is the lowest frequency part. 
+</h3>
+
+
+
+<table border>
+<tr>
+<td align=center colspan="2">
+<legend>Level 7 Decomposition<legend>
+<a href="./wavelet_haar_cheese/wavelet_haar_cheese.png" target="_blank"><img src="./wavelet_haar_cheese/wavelet_haar_cheese.png" height="400"></a> 
+</td>
+</tr>
+
+<tr>
+<td align=center>
+<legend>Audio Signal<legend>
+<a href="./wavelet_haar_cheese/cheese_signal.png" target="_blank"><img src="./wavelet_haar_cheese/cheese_signal.png" height="300"></a> 
+</td>
+<td align=center>
+<legend>Basic Information</legend>
+<a href="./wavelet_haar_cheese/cheese_info.png" target="_blank"><img src="./wavelet_haar_cheese/cheese_info.png" height="300"></a> 
+</td>
+</tr>
+
+<tr>
+<td align=center>
+<legend>Level 1 Approximation<legend>
+<a href="./wavelet_haar_cheese/cheese_ah01.png" target="_blank"><img src="./wavelet_haar_cheese/cheese_ah01.png" height="300"></a> 
+</td>
+<td align=center>
+<legend>Level 1 Detail</legend>
+<a href="./wavelet_haar_cheese/cheese_dh01.png" target="_blank"><img src="./wavelet_haar_cheese/cheese_dh01.png" height="300"></a> 
+</td>
+</tr>
+
+<tr>
+<td align=center>
+<legend>Level 2 Approximation<legend>
+<a href="./wavelet_haar_cheese/cheese_ah02.png" target="_blank"><img src="./wavelet_haar_cheese/cheese_ah02.png" height="300"></a> 
+</td>
+<td align=center>
+<legend>Level 2 Detail</legend>
+<a href="./wavelet_haar_cheese/cheese_dh02.png" target="_blank"><img src="./wavelet_haar_cheese/cheese_dh02.png" height="300"></a> 
+</td>
+</tr>
+
+<tr>
+<td align=center>
+<legend>Level 3 Approximation<legend>
+<a href="./wavelet_haar_cheese/cheese_ah03.png" target="_blank"><img src="./wavelet_haar_cheese/cheese_ah03.png" height="300"></a> 
+</td>
+<td align=center>
+<legend>Level 3 Detail</legend>
+<a href="./wavelet_haar_cheese/cheese_dh03.png" target="_blank"><img src="./wavelet_haar_cheese/cheese_dh03.png" height="300"></a> 
+</td>
+</tr>
+
+<tr>
+<td align=center>
+<legend>Level 4 Approximation<legend>
+<a href="./wavelet_haar_cheese/cheese_ah04.png" target="_blank"><img src="./wavelet_haar_cheese/cheese_ah04.png" height="300"></a> 
+</td>
+<td align=center>
+<legend>Level 4 Detail</legend>
+<a href="./wavelet_haar_cheese/cheese_dh04.png" target="_blank"><img src="./wavelet_haar_cheese/cheese_dh04.png" height="300"></a> 
+</td>
+</tr>
+
+<tr>
+<td align=center>
+<legend>Level 5 Approximation<legend>
+<a href="./wavelet_haar_cheese/cheese_ah05.png" target="_blank"><img src="./wavelet_haar_cheese/cheese_ah05.png" height="300"></a> 
+</td>
+<td align=center>
+<legend>Level 5 Detail</legend>
+<a href="./wavelet_haar_cheese/cheese_dh05.png" target="_blank"><img src="./wavelet_haar_cheese/cheese_dh05.png" height="300"></a> 
+</td>
+</tr>
+
+<tr>
+<td align=center>
+<legend>Level 6 Approximation<legend>
+<a href="./wavelet_haar_cheese/cheese_ah06.png" target="_blank"><img src="./wavelet_haar_cheese/cheese_ah06.png" height="300"></a> 
+</td>
+<td align=center>
+<legend>Level 6 Detail</legend>
+<a href="./wavelet_haar_cheese/cheese_dh06.png" target="_blank"><img src="./wavelet_haar_cheese/cheese_dh06.png" height="300"></a> 
+</td>
+</tr>
+
+<tr>
+<td align=center>
+<legend>Level 7 Approximation<legend>
+<a href="./wavelet_haar_cheese/cheese_ah07.png" target="_blank"><img src="./wavelet_haar_cheese/cheese_ah07.png" height="300"></a> 
+</td>
+<td align=center>
+<legend>Level 7 Detail</legend>
+<a href="./wavelet_haar_cheese/cheese_dh07.png" target="_blank"><img src="./wavelet_haar_cheese/cheese_dh07.png" height="300"></a> 
+</td>
+</tr>
+
+<tr>
+<td align=center>
+<legend>Level 8 Approximation<legend>
+<a href="./wavelet_haar_cheese/cheese_ah08.png" target="_blank"><img src="./wavelet_haar_cheese/cheese_ah08.png" height="300"></a> 
+</td>
+<td align=center>
+<legend>Level 8 Detail</legend>
+<a href="./wavelet_haar_cheese/cheese_dh08.png" target="_blank"><img src="./wavelet_haar_cheese/cheese_dh08.png" height="300"></a> 
+</td>
+</tr>
+
+<tr>
+<td align=center>
+<legend>Level 9 Approximation<legend>
+<a href="./wavelet_haar_cheese/cheese_ah09.png" target="_blank"><img src="./wavelet_haar_cheese/cheese_ah09.png" height="300"></a> 
+</td>
+<td align=center>
+<legend>Level 9 Detail</legend>
+<a href="./wavelet_haar_cheese/cheese_dh09.png" target="_blank"><img src="./wavelet_haar_cheese/cheese_dh09.png" height="300"></a> 
+</td>
+</tr>
+
+<tr>
+<td align=center>
+<legend>Level 10 Approximation<legend>
+<a href="./wavelet_haar_cheese/cheese_ah10.png" target="_blank"><img src="./wavelet_haar_cheese/cheese_ah10.png" height="300"></a> 
+</td>
+<td align=center>
+<legend>Level 10 Detail</legend>
+<a href="./wavelet_haar_cheese/cheese_dh10.png" target="_blank"><img src="./wavelet_haar_cheese/cheese_dh10.png" height="300"></a> 
+</td>
+</tr>
+
+</table>
+
+
+</font>
+</body>
+</html>
+
+
+
+
+
+

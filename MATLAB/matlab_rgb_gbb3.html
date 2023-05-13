@@ -1,0 +1,71 @@
+<html>
+<head>
+<title>Image processing of RGB images: cactuses</title>
+<meta http-equiv="content-type" content="text/html:charset=UTF-8">
+<link rel="Shortcut Icon" href="favicon.ico">
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+</head>
+
+<body text=#4169E1 bgcolor=#FFFFF0 vlink=#0000CD link=#0000CD>
+<font face="Times New Roman">
+
+<center>
+<h2>
+Image processing of RGB images
+<br>
+cactuses
+</h2>
+</center>
+
+In this page we split an RGB image into R, G, and B grayscale images, 
+process them and combine them to obtain a new processed RGB image. 
+See 
+<a href="./rgb_gbb3/rgb_imsplit_gbb3.m" target="_blank">rgb_imsplit_gbb3.m</a>, 
+<a href="./rgb_gbb3/rgb_svd_gbb3.m" target="_blank">rgb_svd_gbb3.m</a> 
+and 
+<a href="./rgb_gbb3/rgb_db2_gbb3.m" target="_blank">rgb_db2_gbb3.m</a>
+for the detail. 
+
+<br>
+<br>
+<center>
+<table border>
+
+<tr>
+<td align=center>
+<legend>Reading RGB Image</legend>
+<a href="./rgb_gbb3/gbb3.jpg" target="_blank"><img src="./rgb_gbb3/gbb3.jpg" height="150"></a> 
+</td>
+<td align=center>
+<legend>Splitting RGB into R, G and B</legend>
+<a href="./rgb_gbb3/rgb_imsplit_gbb3.png" target="_blank"><img src="./rgb_gbb3/rgb_imsplit_gbb3.png" height="280"></a> 
+</td>
+</tr>
+
+<tr>
+<td align=center colspan="2">
+<legend>Low rank approximation</legend>
+<a href="./rgb_gbb3/rgb_svd_gbb3.png" target="_blank"><img src="./rgb_gbb3/rgb_svd_gbb3.png" width="650"></a> 
+</td>
+</tr>
+
+<tr>
+<td align=center colspan="2">
+<legend>Multiresolution Decomposition (the Daubechies 2 wavelet)</legend>
+<a href="./rgb_gbb3/rgb_db2_gbb3.png" target="_blank"><img src="./rgb_gbb3/rgb_db2_gbb3.png" width="650"></a> 
+</td>
+</tr>
+
+</table>
+</center>
+
+</font>
+</body>
+</html>
+
+
+
+
+
+

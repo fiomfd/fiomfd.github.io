@@ -1,0 +1,152 @@
+<html>
+<head>
+<title>Ruler and Compass Numbers</title>
+<meta http-equiv="content-type" content="text/html:charset=UTF-8">
+<link rel="Shortcut Icon" href="favicon.ico">
+
+
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<link rel="stylesheet" type="text/css" href="https://tikzjax.com/v1/fonts.css">
+<script src="https://tikzjax.com/v1/tikzjax.js"></script>
+
+</head>
+
+<body text=#4169E1 bgcolor=#FFFFF0 vlink=#0000CD link=#0000CD>
+
+<h2>
+Ruler and Compass Numbers
+</h2>
+
+<font face="Times New Roman">
+<script type="text/tikz">
+\begin{tikzpicture}
+\draw[->] (-1,0) -- (7,0) node[right] {\(x\)};
+\draw[->] (0,-1) -- (0,4) node[above] {\(y\)};
+\draw[blue, thick] (6,0) -- (0,3);
+\draw[green] (4,0) -- (0,2);
+\draw[dashed] (0,1) -- (4,1);
+\draw[dashed] (4,0) -- (4,1);
+\fill (4,0) circle (3pt) node[below] {\(b\)};
+\fill[red] (6,0) circle (3pt) node[below] {\(ab\)};
+\fill (0,1) circle (3pt) node[left] {\(a-1\)};
+\fill (0,2) circle (3pt) node[left] {\(1\)};
+\fill (0,3) circle (3pt) node[left] {\(a\)};
+\fill (4,1) circle (3pt) node[above right] {\((b,a-1)\)};
+\fill (5,3.5) circle (0pt) node[right] {\(a>1, b>0\)};
+\end{tikzpicture}
+</script>
+
+<br>
+
+<script type="text/tikz">
+\begin{tikzpicture}
+\draw[->] (-1,0) -- (7,0) node[right] {$x$};
+\draw[->] (0,-2) -- (0,4) node[above] {$y$};
+\draw[blue, thick] (6,-1) -- (0,2);
+\draw[green] (6,0) -- (0,3);
+\draw[dashed] (0,-1) -- (6,-1);
+\draw[dashed] (6,0) -- (6,-1);
+\fill[red] (4,0) circle (3pt) node[below left] {$ab$};
+\fill (6,0) circle (3pt) node[above right] {$b$};
+\fill (0,-1) circle (3pt) node[left] {$a-1$};
+\fill (0,2) circle (3pt) node[left] {$a$};
+\fill (0,3) circle (3pt) node[left] {$1$};
+\fill (6,-1) circle (3pt) node[below] {$(b,a-1)$};
+\fill (4,3.5) circle (0pt) node[right] {$0<a<1, b>0$};
+\end{tikzpicture}
+</script>
+
+<br>
+
+<script type="text/tikz">
+\begin{tikzpicture}
+\draw[->] (-1,0) -- (7.5,0) node[right] {$x$};
+\draw[->] (0,-1) -- (0,5.5) node[above] {$y$};
+\draw[blue, thick] (6.75,0) -- (0,4.5);
+\draw[green] (4.5,0) -- (0,3);
+\draw[dashed] (0,1.5) -- (4.5,1.5);
+\draw[dashed] (4.5,0) -- (4.5,1.5);
+\fill[red] (6.75,0) circle (3pt) node[below] {$1/a$};
+\fill (4.5,0) circle (3pt) node[below] {$1$};
+\fill (0,1.5) circle (3pt) node[left] {$1-a$};
+\fill (0,4.5) circle (3pt) node[left] {$1$};
+\fill (0,3) circle (3pt) node[left] {$a$};
+\fill (4.5,1.5) circle (3pt) node[above right] {$(1,1-a)$};
+\fill (4.5,4.5) circle (0pt) node[right] {$0<a<1$};
+\end{tikzpicture}
+</script>
+
+<br>
+
+<script type="text/tikz">
+\begin{tikzpicture}
+\draw[->] (-1,0) -- (8,0) node[right] {$x$};
+\draw[->] (0,-1) -- (0,3.5) node[above] {$y$};
+\draw[blue, thick] (7,0) arc (0:180:3);
+\draw[green] (0,0) -- (3,0);
+\fill[red] (1,0) circle (3pt) node[below] {$a-b$};
+\fill (4,0) circle (3pt) node[below] {$a$};
+\fill (3,0) circle (3pt) node[below] {$b$};
+\fill[red] (7,0) circle (3pt) node[below] {$a+b$};
+\end{tikzpicture}
+</script>
+
+<br>
+
+<script type="text/tikz">
+\begin{tikzpicture}
+\draw[->] (-1,0) -- (4,0) node[right] {$x$};
+\draw[->] (0,-2) -- (0,5) node[above] {$y$};
+\draw[blue, thick] (3,-1.5) -- (0,3);
+\draw[green] (3,0) -- (0,4.5);
+\draw[dashed] (0,-1.5) -- (3,-1.5);
+\draw[dashed] (3,0) -- (3,-1.5);
+\fill[red] (2,0) circle (3pt) node[below left] {$1/a$};
+\fill (3,0) circle (3pt) node[above right] {$1$};
+\fill (0,-1.5) circle (3pt) node[left] {$1-a$};
+\fill (0,3) circle (3pt) node[left] {$1$};
+\fill (0,4.5) circle (3pt) node[left] {$a$};
+\fill (3,-1.5) circle (3pt) node[below] {$(1,1-a)$};
+\fill (3,4.5) circle (0pt) node[right] {$a>1$};
+\end{tikzpicture}
+</script>
+
+<br>
+
+<script type="text/tikz">
+\begin{tikzpicture}
+\draw[->] (-1,0) -- (5,0) node[right] {$x$};
+\draw[->] (0,-3) -- (0,7) node[above] {$y$};
+\draw[blue, thick] (0,-2) arc (-90:90:4);
+\draw[green] (3.464101615137754,0) -- (0,2) -- (0,0) -- cycle ;
+\fill[red] (3.464101615137754,0) circle (3pt) node[below right] {$\sqrt{a}$};
+\fill (0,6) circle (3pt) node[left] {$a$};
+\fill (0,2) circle (3pt) node[left] {$(a-1)/2$};
+\fill (0,-2) circle (3pt) node[left] {$1$};
+\fill (0,0) circle (3pt) node[above left] {$0$};
+\fill (3.5,6) circle (0pt) node[right] {$a>1$};
+\end{tikzpicture}
+</script>
+
+<br>
+
+<script type="text/tikz">
+\begin{tikzpicture}
+\draw[->] (-1,0) -- (5,0) node[right] {$x$};
+\draw[->] (0,-7) -- (0,3) node[above] {$y$};
+\draw[blue, thick] (0,-6) arc (-90:90:4);
+\draw[green] (3.464101615137754,0) -- (0,-2) -- (0,0) -- cycle ;
+\fill[red] (3.464101615137754,0) circle (3pt) node[above right] {$\sqrt{a}$};
+\fill (0,4) circle (3pt) node[left] {$a$};
+\fill (0,-2) circle (3pt) node[left] {$(a-1)/2$};
+\fill (0,-6) circle (3pt) node[left] {$1$};
+\fill (0,0) circle (3pt) node[above left] {$0$};
+\fill (3.5,2) circle (0pt) node[right] {$0<a<1$};
+\end{tikzpicture}
+</script>
+
+</font>
+</body>
+</html>
+

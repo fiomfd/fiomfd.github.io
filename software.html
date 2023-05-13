@@ -1,0 +1,798 @@
+<title>Computer Software</title>
+<meta http-equiv="content-type" content="text/html:charset=UTF-8">
+<link rel="Shortcut Icon" HREF="favicon.ico">
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WVJ77C264Q"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-WVJ77C264Q');
+</script>
+</head>
+
+<body text=#4169E1 bgcolor=#FFFFF0 vlink=#0000CD link=#0000CD>
+
+<font face="Times New Roman">
+
+<a href="index.html">Home</a>
+<hr>
+
+<h2 align="center">Computer Software</h2>
+
+<center>8 January 2023</center>
+
+<br>
+
+Here are some works of computer software
+<a href="https://www.mathworks.com/products/matlab.html" target="_blank">
+<img src="./image/matlab.png" height="24"> 
+MATLAB
+</a>, 
+<a href="https://julialang.org/" target="_blank">
+<img src="./image/julia.png" height="24"> 
+Julia Programming Language
+</a>, 
+<a href="https://maxima.sourceforge.io/" target="_blank">
+<img src="./image/maxima.png" height="24"> 
+Maxima
+</a>  
+and 
+<a href="https://www.wolfram.com/mathematica/" target="_blank">
+<img src="./image/mathematica.svg" height="24"> 
+Mathematica
+</a>, 
+and some notes on elementary topics. 
+
+<ul>
+<!-- list of some notes starts here -->
+<li>
+Some elementary topics in mathematics
+
+<ul>
+<li>
+Lecture notes created by 
+<a href="https://jp.mathworks.com/help/matlab/matlab_prog/what-is-a-live-script-or-function.html?lang=en" target="_blank">MATLAB Live Script</a> (*.mlx)
+<ul>
+<li>
+<a href="https://rencho.me/MATLAB/live/live-aliasing.mlx" target="_blank">The Nyquist-Shannon Sampling Theorem and Aliasing</a>
+<li>
+<a href="https://rencho.me/MATLAB/live/live-ct.mlx" target="_blank">X-ray transform on \(\mathbb{R}^2\)</a>
+&nbsp;
+<a href="https://rencho.me/material/stomach.png" target="_blank">material grayscale image</a>
+<li>
+<a href="https://rencho.me/MATLAB/live/live-diff.mlx" target="_blank">Differentiability of One-Variable Functions</a>
+<li>
+<a href="https://rencho.me/MATLAB/live/live-taylor.mlx" target="_blank">Convergence and Divergence of Taylor Series</a>
+<li>
+<a href="https://rencho.me/MATLAB/live/live-riemann.mlx" target="_blank">Riemann Integrability of One-Variable Functions</a>
+<li>
+<a href="https://rencho.me/MATLAB/live/live-svd.mlx" target="_blank">SVD and Best Low Rank Approximation</a>
+&nbsp;
+<a href="https://rencho.me/material/char_kway_teow.jpg" target="_blank">material RGB image</a>
+<li>
+<a href="https://rencho.me/MATLAB/live/live-ode.mlx" target="_blank">Ordinary Differential Equations</a>
+<li>
+<a href="https://rencho.me/MATLAB/live/live-numerical-ode.mlx" target="_blank">Numerical Solutions to ODEs</a>
+<li>
+<a href="https://rencho.me/MATLAB/live/live-fourier.mlx" target="_blank">Convergence and Divergence of Fourier Series</a>
+<br>
+Slideshow
+&nbsp;
+<a href="https://rencho.me/MATLAB/live/piecewisesmooth.mp4" target="_blank">Decomposition of Piecewise Smooth Functions</a>
+</ul>
+<!-- Pluto.jl -->
+<li>
+Lecture notes created by 
+<a href="https://julialang.org/" target="_blank">
+<img src="./image/julia.png" height="24">
+Julia Programming Language</a> 
+with  
+<a href="https://juliahub.com/ui/Packages/Pluto/OJqMt/0.7.5" target="_blank">
+<img src="./image/pluto.svg" height="24"> 
+Pluto.jl
+</a>
+<ul>
+<li>
+Numerical Solutions to ODEs (including the SIR model)
+<br>
+<button type="button" onclick="copyEvent('copy09')">Copy URL</button>
+<text id="copy09">https://rencho.me/julia/pluto/pluto_numerical_ode.jl</text>
+
+<script>
+    function copyEvent(id)
+    {
+        var str = document.getElementById(id);
+        window.getSelection().selectAllChildren(str);
+        document.execCommand("Copy")
+    }
+</script>
+
+<li>
+Convergence and Divergence of Fourier Series
+<br>
+<button type="button" onclick="copyEvent('copy08')">Copy URL</button>
+<text id="copy08">https://rencho.me/julia/pluto/pluto_fourier.jl</text>
+
+<script>
+    function copyEvent(id)
+    {
+        var str = document.getElementById(id);
+        window.getSelection().selectAllChildren(str);
+        document.execCommand("Copy")
+    }
+</script>
+
+<li>
+The Nyquist-Shannon Sampling Theorem and Aliasing
+<br>
+<button type="button" onclick="copyEvent('copy07')">Copy URL</button>
+<text id="copy07">https://rencho.me/julia/pluto/pluto_aliasing.jl</text>
+
+<script>
+    function copyEvent(id)
+    {
+        var str = document.getElementById(id);
+        window.getSelection().selectAllChildren(str);
+        document.execCommand("Copy")
+    }
+</script>
+
+<li>
+X-ray transform on \(\mathbb{R}^2\)
+<br>
+<button type="button" onclick="copyEvent('copy06')">Copy URL</button>
+<text id="copy06">https://rencho.me/julia/pluto/pluto_ct.jl</text>
+
+<script>
+    function copyEvent(id)
+    {
+        var str = document.getElementById(id);
+        window.getSelection().selectAllChildren(str);
+        document.execCommand("Copy")
+    }
+</script>
+<br>
+<a href="https://rencho.me/julia/pluto/xray.jl" target="_blank">package: xray.jl</a>
+&nbsp;
+<a href="https://rencho.me/material/stomach.png" target="_blank">material grayscale image</a>
+<li>
+Differentiability
+<br>
+<button type="button" onclick="copyEvent('copy05')">Copy URL</button>
+<text id="copy05">https://rencho.me/julia/pluto/pluto_differentiability.jl</text>
+
+<script>
+    function copyEvent(id)
+    {
+        var str = document.getElementById(id);
+        window.getSelection().selectAllChildren(str);
+        document.execCommand("Copy")
+    }
+</script>
+<li>
+Riemann integrability
+<br>
+<button type="button" onclick="copyEvent('copy04')">Copy URL</button>
+<text id="copy04">https://rencho.me/julia/pluto/pluto_riemann.jl</text>
+
+<script>
+    function copyEvent(id)
+    {
+        var str = document.getElementById(id);
+        window.getSelection().selectAllChildren(str);
+        document.execCommand("Copy")
+    }
+</script>
+<li>
+The Haar wavelet and multiresolution decomposition
+<br>
+<button type="button" onclick="copyEvent('copy03')">Copy URL</button>
+<text id="copy03">https://rencho.me/julia/pluto/pluto_wavelet.jl</text>
+
+<script>
+    function copyEvent(id)
+    {
+        var str = document.getElementById(id);
+        window.getSelection().selectAllChildren(str);
+        document.execCommand("Copy")
+    }
+</script>
+<br>
+<a href="https://rencho.me/material/char_kway_teow.jpg" target="_blank">material RGB image</a>
+<li>
+Low rank approximation of an RGB image
+<br>
+<button type="button" onclick="copyEvent('copy02')">Copy URL</button>
+<text id="copy02">https://rencho.me/julia/pluto/pluto_svd.jl</text>
+
+<script>
+    function copyEvent(id)
+    {
+        var str = document.getElementById(id);
+        window.getSelection().selectAllChildren(str);
+        document.execCommand("Copy")
+    }
+</script>
+<br>
+<a href="https://rencho.me/material/char_kway_teow.jpg" target="_blank">material RGB image</a>
+<li>
+Taylor series
+<br>
+<button type="button" onclick="copyEvent('copy01')">Copy URL</button>
+<text id="copy01">https://rencho.me/julia/pluto/pluto_taylor.jl</text>
+
+<script>
+    function copyEvent(id)
+    {
+        var str = document.getElementById(id);
+        window.getSelection().selectAllChildren(str);
+        document.execCommand("Copy")
+    }
+</script>
+</ul>
+<!-- Jupyter Notebook -->
+<li>
+Lecture notes created by 
+<a href="https://julialang.org/" target="_blank">
+<img src="./image/julia.png" height="24">
+Julia Programming Language</a> 
+with 
+<a href="https://juliahub.com/ui/Packages/IJulia/nfu7T/1.21.2" target="_blank">
+<img src="./image/ijulia.png" height="20"> 
+IJulia.jl
+</a> 
+and 
+<a href="https://jupyter.org/" target="_blank">
+<img src="./image/jupyter.png" height="24"> 
+Jupyter Notebook
+</a> 
+(*.ipynb)
+<ul>
+<li>
+<a href="https://rencho.me/julia/jupyter/taylor.ipynb" target="_blank">Taylor series</a>
+<li>
+<a href="https://rencho.me/julia/jupyter/svd.ipynb" target="_blank">Low rank approximation of an RGB image</a>
+&nbsp;
+<a href="https://rencho.me/material/char_kway_teow.jpg" target="_blank">material RGB image</a>
+<li>
+<a href="https://rencho.me/julia/jupyter/whatisdata.ipynb" target="_blank">What is data?</a>
+</ul>
+<!-- PDF -->
+<li>
+Lecture notes created by <a href="https://www.latex-project.org/" target="_blank">LaTeX</a> (*.pdf)
+<ul>
+<li> 
+<a href="./pdf/youtube_taylor.pdf" target="_blank">Slides: Taylor's Theorem and Taylor Expansion</a>, 
+<a href="./pdf/taylor101.mp4" target="_blank">video 1</a>, 
+<a href="./pdf/taylor102.mp4" target="_blank">video 2</a>
+<li>
+<a href="./pdf/2d_flow.pdf" target="_blank">One-variable complex analysis and two-dimensional incompressible irrotational steady flow</a>
+<li>
+<a href="./pdf/bargmann.pdf" target="_blank">A note on the Bargmann transform on the Euclidean space</a>
+<li>
+<a href="./pdf/xray_transform.pdf" target="_blank">X-ray transform on the plane and reconstruction formula: The principles of computed tomography</a>
+<li>
+<a href="./pdf/dalembert.pdf" target="_blank">d'Alembert's formula for the one-dimensional wave equation</a>
+<li>
+<a href="./pdf/firstordersystem.pdf" target="_blank">A first order system including the one-dimensional wave equation</a>
+</ul>
+</ul>
+<!-- list of some notes ends here -->
+
+<br>
+
+<!-- MATLAB starts here -->
+<li>
+<a href="https://www.mathworks.com/products/matlab.html" target="_blank">
+<img src="./image/matlab.png" height="24">
+MATLAB</a> 
+is a commercial numerical analysis software widely used 
+in the world except for Japan. 
+
+<ul>
+<li>
+<a href="https://www.youtube.com/watch?v=UzH93k8Jats&list=PLEj1eXJwqG3h-CIy9I69kyDkI0li4EObP" target="_blank">YouTube Playlist</a>
+
+<li>
+Number Theory
+<ul>
+<li>
+<a href="./MATLAB/matlab_green_tao.html" target="_blank">Green-Tao Theorem</a>
+<li>
+<a href="./MATLAB/matlab_abc.html" target="_blank">The abc Theorem</a>
+<li>
+<a href="./MATLAB/matlab_primes.html" target="_blank">Prime Number Theorem</a>
+</ul>
+
+<li>
+Calculus
+<ul>
+<li>
+<a href="./MATLAB/matlab_taylor.html" target="_blank">Convergence and divergence of Taylor expansions</a>
+<li>
+<a href="./MATLAB/matlab_gibbs.html" target="_blank">Gibbs phenomenon of Fourier series</a>
+</ul>
+
+<li>
+CSV
+<ul> 
+<li>
+<a href="./MATLAB/matlab_data_COVID-19.html" target="_blank">COVID-19</a>
+</ul>
+
+<li>
+X-ray transform and reconstruction
+<ul> 
+<li>
+<a href="./MATLAB/matlab_xray_square.html" target="_blank">square</a>, 
+<a href="./MATLAB/matlab_xray_double_squares.html" target="_blank">double squares</a>, 
+<a href="./MATLAB/matlab_xray_half_plane.html" target="_blank">half plane</a>
+<a href="./MATLAB/matlab_xray_regular_triangle.html" target="_blank">regular triangle</a>, 
+<a href="./MATLAB/matlab_xray_stomach.html" target="_blank">stomach</a>
+</ul>
+
+<li>
+2D wave front set (in progress)
+<ul> 
+<li>
+<a href="./MATLAB/matlab_wf_shapes.html" target="_blank">simple planar shapes</a> 
+</ul>
+
+<li>
+Wavelet filters
+<ul>
+<li>
+<a href="./MATLAB/matlab_wavelet.html" target="_blank">Wavelet filters and their Fourier transforms</a>
+</ul>
+
+<li>
+Multiresolution decomposition of audio signals
+<ul>
+<li>
+<a href="./MATLAB/matlab_wavelet_haar_cheese.html" target="_blank">the Haar wavelet</a>, 
+<a href="./MATLAB/matlab_wavelet_db2_cheese.html" target="_blank">the Daubechies 2 wavelet</a>
+</ul>
+
+<li>
+Discrete Fourier transform and spectrogram of audio signals
+<ul>
+<li>
+<a href="./MATLAB/matlab_fourier_cheese.html" target="_blank">human voice</a>, 
+<a href="./MATLAB/matlab_fourier_computer_sound.html" target="_blank">computer sound</a> 
+</ul>
+
+<li>
+Low rank approximation of grayscale images based on SVD
+<ul>
+<li>
+<a href="./MATLAB/matlab_svd_marina_bay.html" target="_blank">Marina Bay Area, Singapore</a>,  
+<a href="./MATLAB/matlab_svd_eckhart.html" target="_blank">Eckhart, U of Chicago</a>, 
+<a href="./MATLAB/matlab_svd_gbb2.html" target="_blank">flowers</a>, 
+<a href="./MATLAB/matlab_svd_shaved_ice.html" target="_blank">shaved ice</a>
+</ul>
+
+<li>
+Multiresolution decomposition of grayscale images
+<ul>
+<li>
+<a href="./MATLAB/matlab_wavelet_haar_gbb2.html" target="_blank">flowers</a>, 
+<a href="./MATLAB/matlab_wavelet_db2_marina_bay.html" target="_blank">Marina Bay Area</a>, 
+<a href="./MATLAB/matlab_wavelet_coif1_eckhart.html" target="_blank">Eckhart, U of Chicago</a>
+</ul>
+
+<li>
+Multichannel images
+<ul>
+<li>
+<a href="./MATLAB/matlab_rgb_matrix.html" target="_blank">Data of an RGB image is a triplet of matrices</a>, 
+<li>
+<a href="./MATLAB/matlab_rgb_shaved_ice.html" target="_blank">shaved ice</a>, 
+<a href="./MATLAB/matlab_rgb_gbb3.html" target="_blank">cactuses</a>, 
+<a href="./MATLAB/matlab_rgb_hokkien_mee.html" target="_blank">fried hokkien mee</a> 
+</ul>
+
+<li>
+Solving ODEs and systems
+<ul>
+<li>
+<a href="./MATLAB/matlab_ode_fluid_flow.html" target="_blank">fluid flow</a>, 
+<a href="./MATLAB/matlab_ode_sir_model.html" target="_blank">SIR model</a>, 
+<a href="./MATLAB/matlab_SIR_COVID-19.html" target="_blank">SIR model for COVID-19</a>. 
+</ul>
+
+<li>
+Solving PDEs with FFT
+<ul>
+<li>
+<a href="./MATLAB/matlab_pde.html" target="_blank">examples (heat, Schr&ouml;dinger, KdV, Burgers)</a>.
+</ul>
+
+</ul>
+<!-- MATLAB ends here -->
+
+<br>
+
+<!-- Julia starts here -->
+<li>
+<a href="https://julialang.org/" target="_blank">
+<img src="./image/julia.png" height="24">
+Julia Programming Language</a>
+is a well-known free programing language. 
+Here are some outputs.  
+
+<ul>
+<li>
+<a href="https://www.youtube.com/playlist?list=PLEj1eXJwqG3jdpzi1igOvmuRDbm3PfG9t" target="_blank">YouTube Playlist</a>
+
+<li>
+Number Theory
+<ul> 
+<li>
+<a href="./julia/julia_green_tao.html" target="_blank">Green-Tao Theorem</a>
+<li>
+<a href="./julia/julia_abc.html" target="_blank">The abc Theorem</a>
+<li>
+<a href="./julia/julia_primes.html" target="_blank">Prime Number Theorem</a>
+</ul>
+
+<li>
+CSV
+<ul> 
+<li>
+<a href="./julia/julia_data_COVID-19.html" target="_blank">COVID-19</a>
+</ul>
+
+<li>
+X-ray transform and reconstruction
+<ul> 
+<li>
+<a href="./julia/julia_xray_square.html" target="_blank">square</a>, 
+<a href="./julia/julia_xray_stomach.html" target="_blank">stomach</a>, 
+<a href="./julia/julia_xray_implants.html" target="_blank">implants</a>
+</ul>
+
+
+<li>
+Low rank approximation of grayscale images based on SVD
+<ul>
+<li>
+<a href="./julia/julia_svd_marina_bay.html" target="_blank">Marina Bay Area, Singapore</a>, 
+<a href="./julia/julia_svd_eckhart.html" target="_blank">Eckhart, U of Chicago</a>, 
+<a href="./julia/julia_svd_gbb2.html" target="_blank">flowers</a>, 
+<a href="./julia/julia_svd_shaved_ice.html" target="_blank">shaved ice</a>
+</ul>
+
+<li>
+Wavelet filters
+<ul>
+<li>
+<a href="./julia/julia_wavelet.html" target="_blank">Wavelet filters and their Fourier transforms</a>
+</ul>
+
+<li>
+Fourier analysis and multiresolution analysis of audio signals
+<ul>
+<li>
+<a href="./julia/julia_fourier_cheese.html" target="_blank">human voice</a>, 
+<a href="./julia/julia_fourier_computer_sound.html" target="_blank">computer sound</a> 
+</ul>
+
+<li>
+Multiresolution decomposition of grayscale images
+<ul>
+<li>
+<a href="./julia/julia_haar_shaved_ice.html" target="_blank">shaved ice</a>, 
+<a href="./julia/julia_db2_gbb2.html" target="_blank">flowers</a>. 
+</ul>
+
+<li>
+Multichannel images
+<ul>
+<li>
+<a href="./julia/julia_rgb_matrix.html" target="_blank">Data of an RGB image is a triplet of matrices</a>, 
+<li>
+<a href="./julia/julia_rgb_gbb2.html" target="_blank">flowers</a>, 
+<a href="./julia/rgb_gbb2/slideshow_lowrankapproximation.mp4" target="_blank">mp4: low rank approximation</a>, 
+<a href="./julia/rgb_gbb2/slideshow_multiresolutiondecomposition.mp4" target="_blank">mp4: multiresolution decomposition</a>, 
+<a href="https://www.youtube.com/watch?v=YpLYt30zwBA" target="_blank">LRA at YouTube</a>, 
+<a href="https://www.youtube.com/watch?v=9iLzrNxXspQ" target="_blank">MRD at YouTube</a>, 
+<li>
+<a href="./julia/julia_rgb_hokkien_mee.html" target="_blank">fried hokkien mee</a>. 
+</ul>
+
+<li>
+Solving ODEs and systems
+<ul>
+<li>
+<a href="./julia/julia_SIR_COVID-19.html" target="_blank">SIR model for COVID-19</a>. 
+</ul>
+
+<li>
+Solving PDEs with FFT
+<ul>
+<li>
+<a href="./julia/julia_pde.html" target="_blank">examples (heat, Schr&ouml;dinger, KdV, Burgers)</a>.
+</ul>
+
+</ul>
+<!-- Julia ends here -->
+
+<br>
+
+<!-- Maxima starts here -->
+<li>
+<a href="http://maxima.sourceforge.net/" target="_blank">
+<img src="./image/maxima.png" height="24">
+Maxima</a> 
+is a well-known free computer algebra system. 
+Here are some maxima files and outputs used in my courses 
+on calculus, linear algebra and etc. 
+ 
+<ul>
+<li>
+<a href="https://www.youtube.com/playlist?list=PLEj1eXJwqG3h6R7DN5eVPUU19sM8Fue9T" target="_blank">YouTube Playlist</a>
+
+<li>
+Number Theory
+
+<ul>
+<li>
+Green-Tao Theorem: 
+<a href="./maxima/green-tao.wxmx" target="_blank">wxmx</a>, 
+<a href="./maxima/green-tao.pdf" target="_blank">pdf</a>
+
+<li>
+Prime Number Theorem: 
+<a href="./maxima/prime_number_theorem.wxmx" target="_blank">wxmx</a>, 
+<a href="./maxima/maxima_prime_number_theorem.pdf" target="_blank">pdf</a>
+
+<li>
+RSA algorithm in cryptography: 
+<a href="./maxima/rsa_1000001_13_8377.wxmx" target="_blank">wxmx</a>, 
+<a href="./maxima/maxima_rsa_1000001_13_8377.pdf" target="_blank">pdf</a>
+
+<li>
+approximation of the base of the natural logarithm e: 
+<a href="./maxima/approximation_of_e.wxmx" target="_blank">wxmx</a>, 
+<a href="./maxima/maxima_approximation_of_e.pdf" target="_blank">pdf</a>
+
+<li>
+approximation of &pi;: 
+<a href="./maxima/approximation_of_pi.wxmx" target="_blank">wxmx</a>, 
+<a href="./maxima/approximation_of_pi.pdf" target="_blank">pdf</a>
+
+<li>
+area of isoperimetric regular polygons: 
+<a href="./maxima/isoperimetric_regular_polygons.wxmx" target="_blank">wxmx</a>, 
+<a href="./maxima/isoperimetric_regular_polygons.pdf" target="_blank">pdf</a>
+
+</ul>
+
+<li>
+Linear Algebra
+
+<ul>
+<li>
+system of linear equations, determinant and inverse: 
+<a href="./maxima/linear_algebra_1.wxmx" target="_blank">wxmx</a>, 
+<a href="./maxima/maxima_linear_algebra_1.pdf" target="_blank">pdf</a>
+
+<li>
+eigenvalues, eigenvectors and normalization of square matrices: 
+<a href="./maxima/linear_algebra_2.wxmx" target="_blank">wxmx</a>, 
+<a href="./maxima/maxima_linear_algebra_2.pdf" target="_blank">pdf</a>
+
+<li>
+matrix exponentials of square matrices: 
+<a href="./maxima/linear_algebra_3.wxmx" target="_blank">wxmx</a>, 
+<a href="./maxima/maxima_linear_algebra_3.pdf" target="_blank">pdf</a>
+
+<li>
+LU factorization, QR factorization, singular value decomposition (SVD): 
+<a href="./maxima/lu_qr_svd.wxmx" target="_blank">wxmx</a>, 
+<a href="./maxima/maxima_lu_qr_svd.pdf" target="_blank">pdf</a>
+
+<li>
+l^p unit spheres on the plane: 
+<a href="./maxima/animation_lp_unit_sphere.wxmx" target="_blank">wxmx</a>, 
+<a href="./maxima/maxima_lp_unit_sphere.pdf" target="_blank">pdf</a>, 
+<a href="./maxima/lp_unit_sphere.mp4" target="_blank">mp4</a>, 
+<a href="https://www.youtube.com/watch?v=hWWJ02NZxHk" target="_blank">YouTube</a>
+</ul>
+
+<li>
+Calculus
+
+<ul>
+<li>
+differentiation, 
+integration, 
+Taylor's polynomial and quadrature: 
+<a href="./maxima/calculus_1.wxmx" target="_blank">wxmx</a>, 
+<a href="./maxima/maxima_calculus_1.pdf" target="_blank">pdf</a>
+
+<li>
+convergence and divergence of the Taylor series: 
+<a href="./maxima/animation_calculus_1_taylor_series.wxmx" target="_blank">wxmx</a>, 
+<a href="./maxima/taylor_1.mp4" target="_blank">mp4</a>, 
+<a href="https://www.youtube.com/watch?v=QpAQU7dnzuw" target="_blank">YouTube</a>
+
+<li>
+Newton's method of one variable: 
+<a href="./maxima/newton_method_1.wxmx" target="_blank">wxmx</a>, 
+<a href="./maxima/maxima_newton_1.pdf" target="_blank">pdf</a>
+<li>
+the graphs of some functions of two variables: 
+<a href="./maxima/calculus_2_graphs.wxmx" target="_blank">wxmx</a>, 
+<a href="./maxima/maxima_calculus_2_graphs_1.pdf" target="_blank">pdf 1</a>, 
+<a href="./maxima/maxima_calculus_2_graphs_2.pdf" target="_blank">pdf 2</a>
+
+<li>
+successive integrations: 
+<a href="./maxima/calculus_2_successive_integrations.wxmx" target="_blank">wxmx</a>, 
+<a href="./maxima/maxima_calculus_2_successive_integrations.pdf" target="_blank">pdf</a>
+
+<li>
+planar vector fields and integral curves: 
+<a href="./maxima/calculus_2_vector_fields.wxmx" target="_blank">wxmx</a>, 
+<a href="./maxima/maxima_calculus_2_vector_fields.pdf" target="_blank">pdf</a>
+
+<li>
+complex numbers and residue: 
+<a href="./maxima/complex_analysis.wxmx" target="_blank">wxmx</a>, 
+<a href="./maxima/maxima_complex_analysis.pdf" target="_blank">pdf</a>
+</ul>
+
+<li>
+Fourier Analysis
+<ul>
+<li>
+Fourier transform and Fourier series: 
+<a href="./maxima/fourier_analysis.wxmx" target="_blank">wxmx</a>, 
+<a href="./maxima/maxima_fourier_analysis.pdf" target="_blank">pdf</a>, 
+<a href="./maxima/fourier_series_sawtooth.mp4" target="_blank">mp4</a>, 
+<a href="https://www.youtube.com/watch?v=QtTRrgyD6MM" target="_blank">YouTube</a>
+
+<li>
+Gibbs phenomenon of Fourier series: 
+<a href="./maxima/animation_gibbs.wxmx" target="_blank">wxmx</a>, 
+<a href="./maxima/gibbs_step.png" target="_blank">png 1</a>, 
+<a href="./maxima/gibbs_frac.png" target="_blank">png 2</a>, 
+<a href="./maxima/gibbs.mp4" target="_blank">mp4</a>, 
+<a href="https://www.youtube.com/watch?v=mg6CEkw8ByQ" target="_blank">YouTube</a>
+
+<li>
+A continuous but nowhere differentiable function: 
+<a href="./maxima/animation_takagi.wxmx" target="_blank">wxmx</a>, 
+<a href="./maxima/takagi.png" target="_blank">png</a>, 
+<a href="./maxima/takagi.mp4" target="_blank">mp4</a>, 
+<a href="https://www.youtube.com/watch?v=xAZ5ncviA-g" target="_blank">YouTube</a>
+
+<li>
+Weyl's equidistribution theorem: 
+<a href="./maxima/weylsequidistribution.wxmx" target="_blank">wxmx</a>, 
+<a href="./maxima/weylsequidistribution.png" target="_blank">png</a>, 
+<a href="./maxima/weyl.mp4" target="_blank">mp4</a>, 
+<a href="https://www.youtube.com/watch?v=NCYIfMwaKZc" target="_blank">YouTube</a>
+
+<li>
+The Nyquist-Shannon sampling theorem and reconstruction formula: 
+<a href="./maxima/nyquist-shannon.wxmx" target="_blank">wxmx</a>, 
+<a href="./maxima/shannon1.png" target="_blank">png 1</a>, 
+<a href="./maxima/shannon2.png" target="_blank">png 2</a>, 
+</ul>
+
+</ul>
+<!-- Maxima ends here -->
+
+<br>
+
+<!-- MATHEMATICA starts here -->
+<li>
+<a href="https://www.wolfram.com/mathematica/" target="_blank">
+<img src="./image/mathematica.svg" height="24">
+Mathematica</a> 
+is a well-known commercial computer algebra system. 
+Here are some mathematica files and outputs used in my courses 
+on calculus, linear algebra and etc.  
+
+<ul>
+<li>
+<a href="https://www.youtube.com/playlist?list=PLEj1eXJwqG3jEM0q9oREhf5Xk8PXhyXNI" target="_blank">YouTube Playlist</a>
+
+<li>
+Number Theory
+<ul>
+<li>
+Green-Tao Theorem: 
+<a href="./MATHEMATICA/Green-Tao.nb" target="_blank">nb</a>, 
+<a href="./MATHEMATICA/green-tao.pdf" target="_blank">pdf</a>
+<li>
+The abc Theorem: 
+<a href="./MATHEMATICA/abc.nb" target="_blank">nb</a>, 
+<a href="./MATHEMATICA/abc.pdf" target="_blank">pdf</a>
+<li>
+Prime Number Theorem: 
+<a href="./MATHEMATICA/animation_prime_number_theorem.nb" target="_blank">nb</a>, 
+<a href="./MATHEMATICA/primes1.mp4" target="_blank">mp4</a>, 
+<a href="https://www.youtube.com/watch?v=iCDH199sYS0" target="_blank">YouTube</a>, 
+<a href="./MATHEMATICA/primes2.mp4" target="_blank">mp4</a>, 
+<a href="https://www.youtube.com/watch?v=LYe_u6WGFEw" target="_blank">YouTube</a>
+<li>
+RSA algorithm in cryptography: 
+<a href="./MATHEMATICA/RSA_1000001_13_8377.nb" target="_blank">nb</a>, 
+<a href="./MATHEMATICA/RSA_1000001_13_8377.pdf" target="_blank">pdf</a>
+</ul>
+
+<li>
+Linear Algebra
+<ul>
+<li>
+l^p unit spheres on the plane: 
+<a href="./MATHEMATICA/animation_sphere.nb" target="_blank">nb</a>, 
+<a href="./MATHEMATICA/sphere.mp4" target="_blank">mp4</a>, 
+<a href="https://www.youtube.com/watch?v=mRfhlXFENqk" target="_blank">YouTube</a>
+</ul>
+
+<li>
+Calculus
+<ul>
+<li>
+Gradient Descent: 
+<a href="./MATHEMATICA/zig_zag.nb" target="_blank">nb</a>, 
+<a href="./MATHEMATICA/zig_zag.pdf" target="_blank">pdf</a>, 
+<a href="./MATHEMATICA/zig_zag.mp4" target="_blank">mp4</a>, 
+<a href="https://www.youtube.com/shorts/nFdzInFn2G4" target="_blank">YouTube</a>
+</ul>
+
+<li>
+one-dimensional Fourier series: 
+<ul>
+<li>
+The Dirichelet kernel: 
+<a href="./MATHEMATICA/animation_dirichelet_kernel.nb" target="_blank">nb</a>, 
+<a href="./MATHEMATICA/dirichelet.mp4" target="_blank">mp4</a>, 
+<a href="https://www.youtube.com/watch?v=v-ugh0eNXrI" target="_blank">YouTube</a>
+<li>
+Gibbs phenomenon:
+<a href="./MATHEMATICA/animation_gibbs.nb" target="_blank">nb</a>, 
+<a href="./MATHEMATICA/gibbs.mp4" target="_blank">mp4</a>, 
+<a href="https://www.youtube.com/watch?v=icrWCFOFxUc" target="_blank">YouTube</a>
+</ul>
+
+<li>
+equidustribuion of sequences on unit circle:
+<a href="./MATHEMATICA/animation_equidustribution.nb" target="_blank">nb</a>
+<ul>
+<li>
+vertexes of regular polygons: 
+<a href="./MATHEMATICA/polygon.mp4" target="_blank">mp4</a>, 
+<a href="https://www.youtube.com/watch?v=OtuwtA8IVME" target="_blank">YouTube</a>
+<li>
+Weyl's equidistribution theorem 1: 
+<a href="./MATHEMATICA/weyl1.mp4" target="_blank">mp4</a>, 
+<a href="https://www.youtube.com/watch?v=CbfKvP8_p-4" target="_blank">YouTube</a>
+<li>
+Weyl's equidistribution theorem 2:
+<a href="./MATHEMATICA/weyl2.mp4" target="_blank">mp4</a>, 
+<a href="https://www.youtube.com/watch?v=xA0CCt1l3cM" target="_blank">YouTube</a>
+<li>
+The progression of the golden ratio:
+<a href="./MATHEMATICA/golden.mp4" target="_blank">mp4</a>, 
+<a href="https://www.youtube.com/watch?v=MucwURFgVRA" target="_blank">YouTube</a>
+</ul>
+
+</ul>
+
+<!-- MATHEMATICA ends here -->
+
+</ul>
+
+</font>
+
+</body>
+</html>

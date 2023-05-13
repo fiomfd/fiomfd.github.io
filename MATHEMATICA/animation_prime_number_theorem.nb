@@ -1,0 +1,509 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     22623,        501]
+NotebookOptionsPosition[     21063,        466]
+NotebookOutlinePosition[     21454,        482]
+CellTagsIndexPosition[     21411,        479]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"Plot", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"PrimePi", "[", "x", "]"}], ",", 
+     RowBox[{"x", "/", 
+      RowBox[{"Log", "[", "x", "]"}]}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", "0", ",", "100"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.7500317376520567`*^9, 3.750031801366724*^9}},
+ CellLabel->"In[27]:=",ExpressionUUID->"c19fec33-de29-44e8-b5a4-901250c256bf"],
+
+Cell[BoxData[
+ GraphicsBox[{{{{}, {}, 
+     TagBox[
+      {RGBColor[0.368417, 0.506779, 0.709798], AbsoluteThickness[1.6], 
+       Opacity[1.], LineBox[CompressedData["
+1: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
+fabm5+H/AO1jcN0=
+        "]]},
+      Annotation[#, "Charting`Private`Tag$24270#1"]& ], 
+     TagBox[
+      {RGBColor[0.880722, 0.611041, 0.142051], AbsoluteThickness[1.6], 
+       Opacity[1.], LineBox[CompressedData["
+1:eJwBEQLu/SFib1JlAgAAACAAAAACAAAAIo/9o54ewT7aCgVq7+eEvrcIKR9t
+aJ8/cPvRbhUHgr/BeK6kKGivP2yt0uXfgJa/kzbkXA2Otz8n7l/e276jv8Yw
+cWcGaL8/LdsgyNrvrb98Ff+4/6DDPyqTNc7r77S/lpJFPvyNxz8qmzJfqdS7
+v68PjMP4ess/ojjXU3Hcwb/IjNJI9WfPPy269hpGWsa/8IQM53iq0T+o4aVd
+lXLLv33Dryn3oNM/2KxjwqWb0L8KAlNsdZfVP9kanKoJ39O/lkD2rvON1z/o
+rVCXkZDXvyN/mfFxhNk/kLy98CjA27+wvTw08HrbP8MHzayiQOC/PPzfdm5x
+3T+023kU8fXiv8k6g7nsZ98/6nm5IuwO5r+rPBN+Na/gP+hIBq1dnum/8dtk
+n3Sq4T9AdPT7Pbztvzh7tsCzpeI/xjAb7sxD8b9+Ggji8qDjPwhQBiuwFPS/
+xLlZAzKc5D8Q6gTZUWz3vwpZqyRxl+U/r7/eZ6Fw+79Q+PxFsJLmP25mGvqu
+KwDAl5dOZ++N5z8swm3XojcDwN42oIguieg/2eDZM0IYB8Ak1vGpbYTpP+ia
+LpkHLgzAanVDy6x/6j8clp08JI8RwLAUlezreus/UzILMfuOFsD2s+YNK3bs
+P4FHsh9kXB7APVM4L2px7T/m9wYWwxgmwH0DwpnB6O0/ALZED4N9LcDr4Rbr
+
+        "]], LineBox[CompressedData["
+1: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
+        "]]},
+      Annotation[#, 
+       "Charting`Private`Tag$24270#2"]& ], {}}, {{}, {}, {}, {}}}, {}, {}},
+  AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
+  Axes->{True, True},
+  AxesLabel->{None, None},
+  AxesOrigin->{0, 0},
+  DisplayFunction->Identity,
+  Frame->{{False, False}, {False, False}},
+  FrameLabel->{{None, None}, {None, None}},
+  FrameTicks->{{Automatic, 
+     Charting`ScaledFrameTicks[{Identity, Identity}]}, {Automatic, 
+     Charting`ScaledFrameTicks[{Identity, Identity}]}},
+  GridLines->{None, None},
+  GridLinesStyle->Directive[
+    GrayLevel[0.5, 0.4]],
+  ImagePadding->All,
+  Method->{
+   "DefaultBoundaryStyle" -> Automatic, "DefaultMeshStyle" -> 
+    AbsolutePointSize[6], "ScalingFunctions" -> None, 
+    "CoordinatesToolOptions" -> {"DisplayFunction" -> ({
+        (Identity[#]& )[
+         Part[#, 1]], 
+        (Identity[#]& )[
+         Part[#, 2]]}& ), "CopiedValueFunction" -> ({
+        (Identity[#]& )[
+         Part[#, 1]], 
+        (Identity[#]& )[
+         Part[#, 2]]}& )}},
+  PlotRange->{{0, 100}, {-14.745140530717435`, 32.87324468437312}},
+  PlotRangeClipping->True,
+  PlotRangePadding->{{
+     Scaled[0.02], 
+     Scaled[0.02]}, {
+     Scaled[0.05], 
+     Scaled[0.05]}},
+  Ticks->{Automatic, Automatic}]], "Output",
+ CellChangeTimes->{{3.7500317687566347`*^9, 3.750031802215027*^9}},
+ CellLabel->"Out[27]=",ExpressionUUID->"65267662-7cc3-402a-8f19-e5347d145a23"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Animate", "[", 
+  RowBox[{
+   RowBox[{"Plot", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"PrimePi", "[", "x", "]"}], ",", 
+       RowBox[{"x", "/", 
+        RowBox[{"Log", "[", "x", "]"}]}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", "E", ",", "N"}], "}"}], ",", 
+     RowBox[{"PlotLegends", "\[Rule]", 
+      RowBox[{"Placed", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"\"\<Pi(x)\>\"", ",", "\"\<x/log(x)\>\""}], "}"}], ",", 
+        "Left"}], "]"}]}], ",", 
+     RowBox[{"PlotLabel", "\[Rule]", 
+      RowBox[{"Style", "[", 
+       RowBox[{
+       "\"\<Prime Number Theorem\>\"", ",", "20", ",", " ", "Blue", ",", " ", 
+        "Bold"}], "]"}]}]}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"N", ",", "100", ",", "10000"}], "}"}], ",", 
+   RowBox[{"AnimationRate", "\[Rule]", "100"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.845271432450872*^9, 3.8452714959003*^9}, {
+   3.845271532817157*^9, 3.84527158143436*^9}, {3.845271620392099*^9, 
+   3.845271620601623*^9}, {3.845271700292973*^9, 3.8452717083042917`*^9}, 
+   3.8452717397888403`*^9, {3.845271812507976*^9, 3.845271860367847*^9}, {
+   3.8452719016159887`*^9, 3.845271908801668*^9}, {3.8452719736629753`*^9, 
+   3.8452719745977983`*^9}, {3.8452721024720592`*^9, 3.845272107765341*^9}, {
+   3.845272317103746*^9, 3.845272378471137*^9}, {3.845272478671212*^9, 
+   3.8452725418009644`*^9}, {3.8452725745444813`*^9, 3.845272646596595*^9}, {
+   3.845272780667235*^9, 3.845272782875602*^9}},
+ CellLabel->"In[22]:=",ExpressionUUID->"fb2f0da1-b365-4aa8-acea-2e240e06b9bc"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{N$$ = 1445.8891868591306`, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{
+      Hold[N$$], 100, 10000}}, Typeset`size$$ = {449., {121., 126.}}, 
+    Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = True}, 
+    
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, "Variables" :> {N$$ = 100}, "ControllerVariables" :> {},
+       "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> Plot[{
+         PrimePi[$CellContext`x], $CellContext`x/
+         Log[$CellContext`x]}, {$CellContext`x, E, N$$}, PlotLegends -> 
+        Placed[{"Pi(x)", "x/log(x)"}, Left], PlotLabel -> 
+        Style["Prime Number Theorem", 20, Blue, Bold]], 
+      "Specifications" :> {{
+        N$$, 100, 10000, AnimationRate -> 100, 
+         AppearanceElements -> {
+          "ProgressSlider", "PlayPauseButton", "FasterSlowerButtons", 
+           "DirectionButton"}}}, 
+      "Options" :> {
+       ControlType -> Animator, AppearanceElements -> None, DefaultBaseStyle -> 
+        "Animate", DefaultLabelStyle -> "AnimateLabel", SynchronousUpdating -> 
+        True, ShrinkingDelay -> 10.}, "DefaultOptions" :> {}],
+     ImageSizeCache->{496., {157., 163.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Animate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{
+  3.845271497808343*^9, {3.845271537700842*^9, 3.845271586419044*^9}, 
+   3.845271622235273*^9, 3.845271703438747*^9, 3.845271748505316*^9, {
+   3.8452718280052967`*^9, 3.84527186104125*^9}, 3.8452719101197977`*^9, 
+   3.845271975553656*^9, 3.845272109803974*^9, 3.845272327086536*^9, 
+   3.8452723809871407`*^9, {3.845272517410561*^9, 3.845272543220716*^9}, {
+   3.845272629364056*^9, 3.8452726479823236`*^9}, 3.845272784270081*^9},
+ CellLabel->"Out[22]=",ExpressionUUID->"f0cc868c-4efd-4181-a0bb-58b440beeaac"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"X", ":=", 
+  RowBox[{"Animate", "[", 
+   RowBox[{
+    RowBox[{"Plot", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"PrimePi", "[", "x", "]"}], ",", 
+        RowBox[{"x", "/", 
+         RowBox[{"Log", "[", "x", "]"}]}]}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"x", ",", "E", ",", "N"}], "}"}], ",", 
+      RowBox[{"PlotLegends", "\[Rule]", 
+       RowBox[{"Placed", "[", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Pi(x)\>\"", ",", "\"\<x/log(x)\>\""}], "}"}], ",", 
+         "Left"}], "]"}]}], ",", 
+      RowBox[{"PlotLabel", "\[Rule]", 
+       RowBox[{"Style", "[", 
+        RowBox[{
+        "\"\<Prime Number Theorem\>\"", ",", "20", ",", " ", "Blue", ",", " ",
+          "Bold"}], "]"}]}]}], "]"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"N", ",", "100", ",", "10000"}], "}"}], ",", 
+    RowBox[{"AnimationRate", "\[Rule]", "100"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.84527388352155*^9, 3.845273900288368*^9}},
+ CellLabel->"In[43]:=",ExpressionUUID->"4cefe03a-3157-44a0-8b44-e6ec114c1399"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Export", "[", 
+  RowBox[{"\"\<primes1.mp4\>\"", ",", " ", "X", ",", " ", "\"\<mp4\>\""}], 
+  " ", "]"}]], "Input",
+ CellChangeTimes->{{3.5577870056335506`*^9, 3.5577871183749485`*^9}, {
+  3.720822630962792*^9, 3.720822651390596*^9}, {3.839370812617347*^9, 
+  3.839370819957366*^9}, {3.845273924244116*^9, 3.845273948665378*^9}},
+ CellLabel->"In[44]:=",ExpressionUUID->"3aff50d6-3654-471b-91a7-9b8ddece7ba1"],
+
+Cell[BoxData["\<\"primes1.mp4\"\>"], "Output",
+ CellChangeTimes->{
+  3.845272875957179*^9, {3.8452729131441393`*^9, 3.845272953808639*^9}, 
+   3.8452730106353703`*^9, {3.8452730451349573`*^9, 3.845273075631803*^9}, {
+   3.8452731292950163`*^9, 3.845273186863546*^9}, 3.845273234586697*^9, 
+   3.8452732670348463`*^9, 3.845273345239554*^9, {3.845273475539736*^9, 
+   3.845273519102284*^9}, 3.8452735551046762`*^9, 3.84527401688021*^9},
+ CellLabel->"Out[44]=",ExpressionUUID->"f9339bbd-c3b0-4d9b-9483-129ace1d844c"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Animate", "[", 
+  RowBox[{
+   RowBox[{"Plot", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"PrimePi", "[", "x", "]"}], "/", 
+        RowBox[{"(", 
+         RowBox[{"x", "/", 
+          RowBox[{"Log", "[", "x", "]"}]}], ")"}]}], ",", "1"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", "E", ",", "N"}], "}"}], ",", 
+     RowBox[{"PlotLabel", "\[Rule]", 
+      RowBox[{"Style", "[", 
+       RowBox[{
+       "\"\<Pi(x)/(x/log(x))\>\"", ",", "20", ",", " ", "Blue", ",", "Bold"}],
+        "]"}]}]}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"N", ",", "100", ",", "1000000000000"}], "}"}], ",", 
+   RowBox[{"AnimationRate", "\[Rule]", "50000000000"}]}], "]"}]], "Input",
+ CellLabel->"In[45]:=",ExpressionUUID->"d1474c5e-1a82-4238-b02f-85ac17a9331a"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{N$$ = 1.8745005140767822`*^11, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{
+      Hold[N$$], 100, 1000000000000}}, Typeset`size$$ = {360., {124., 128.}}, 
+    Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = True}, 
+    
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, "Variables" :> {N$$ = 100}, "ControllerVariables" :> {},
+       "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> 
+      Plot[{PrimePi[$CellContext`x]/($CellContext`x/Log[$CellContext`x]), 
+         1}, {$CellContext`x, E, N$$}, PlotLabel -> 
+        Style["Pi(x)/(x/log(x))", 20, Blue, Bold]], 
+      "Specifications" :> {{
+        N$$, 100, 1000000000000, AnimationRate -> 50000000000, 
+         AppearanceElements -> {
+          "ProgressSlider", "PlayPauseButton", "FasterSlowerButtons", 
+           "DirectionButton"}}}, 
+      "Options" :> {
+       ControlType -> Animator, AppearanceElements -> None, DefaultBaseStyle -> 
+        "Animate", DefaultLabelStyle -> "AnimateLabel", SynchronousUpdating -> 
+        True, ShrinkingDelay -> 10.}, "DefaultOptions" :> {}],
+     ImageSizeCache->{407., {160., 166.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Animate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{3.845274086400731*^9},
+ CellLabel->"Out[45]=",ExpressionUUID->"4a7f6176-8286-434b-8bca-7e0e0454f4f9"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"Y", ":=", 
+  RowBox[{"Animate", "[", 
+   RowBox[{
+    RowBox[{"Plot", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"PrimePi", "[", "x", "]"}], "/", 
+         RowBox[{"(", 
+          RowBox[{"x", "/", 
+           RowBox[{"Log", "[", "x", "]"}]}], ")"}]}], ",", "1"}], "}"}], ",", 
+      
+      RowBox[{"{", 
+       RowBox[{"x", ",", "E", ",", "N"}], "}"}], ",", 
+      RowBox[{"PlotLabel", "\[Rule]", 
+       RowBox[{"Style", "[", 
+        RowBox[{
+        "\"\<Pi(x)/(x/log(x))\>\"", ",", "20", ",", " ", "Blue", ",", 
+         "Bold"}], "]"}]}]}], "]"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"N", ",", "100", ",", "1000000000000"}], "}"}], ",", 
+    RowBox[{"AnimationRate", "\[Rule]", "50000000000"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.84527409645781*^9, 3.84527411202773*^9}},
+ CellLabel->"In[46]:=",ExpressionUUID->"17c589f1-8494-46dc-890b-21cfd60d35d3"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Export", "[", 
+  RowBox[{"\"\<primes2.mp4\>\"", ",", " ", "Y", ",", " ", "\"\<mp4\>\""}], 
+  " ", "]"}]], "Input",
+ CellChangeTimes->{{3.845274128152156*^9, 3.845274131355363*^9}},
+ CellLabel->"In[47]:=",ExpressionUUID->"3bf622d4-7deb-4079-85e5-bda1912651c5"],
+
+Cell[BoxData["\<\"primes2.mp4\"\>"], "Output",
+ CellChangeTimes->{3.845274244780704*^9},
+ CellLabel->"Out[47]=",ExpressionUUID->"43a3c1b5-fa22-46f1-8447-6e96284c7093"]
+}, Open  ]]
+},
+WindowSize->{808, 911},
+WindowMargins->{{Automatic, 300}, {44, Automatic}},
+FrontEndVersion->"12.1 for Linux x86 (64-bit) (June 22, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"247b5373-b9a3-469a-ab59-7c3339a767eb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 434, 11, 30, "Input",ExpressionUUID->"c19fec33-de29-44e8-b5a4-901250c256bf"],
+Cell[1017, 35, 9458, 176, 232, "Output",ExpressionUUID->"65267662-7cc3-402a-8f19-e5347d145a23"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[10512, 216, 1606, 35, 97, "Input",ExpressionUUID->"fb2f0da1-b365-4aa8-acea-2e240e06b9bc"],
+Cell[12121, 253, 2509, 48, 339, "Output",ExpressionUUID->"f0cc868c-4efd-4181-a0bb-58b440beeaac"]
+}, Open  ]],
+Cell[14645, 304, 1080, 28, 97, "Input",ExpressionUUID->"4cefe03a-3157-44a0-8b44-e6ec114c1399"],
+Cell[CellGroupData[{
+Cell[15750, 336, 431, 7, 30, "Input",ExpressionUUID->"3aff50d6-3654-471b-91a7-9b8ddece7ba1"],
+Cell[16184, 345, 513, 7, 34, "Output",ExpressionUUID->"f9339bbd-c3b0-4d9b-9483-129ace1d844c"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[16734, 357, 820, 22, 75, "Input",ExpressionUUID->"d1474c5e-1a82-4238-b02f-85ac17a9331a"],
+Cell[17557, 381, 2061, 41, 345, "Output",ExpressionUUID->"4a7f6176-8286-434b-8bca-7e0e0454f4f9"]
+}, Open  ]],
+Cell[19633, 425, 936, 25, 75, "Input",ExpressionUUID->"17c589f1-8494-46dc-890b-21cfd60d35d3"],
+Cell[CellGroupData[{
+Cell[20594, 454, 283, 5, 30, "Input",ExpressionUUID->"3bf622d4-7deb-4079-85e5-bda1912651c5"],
+Cell[20880, 461, 167, 2, 34, "Output",ExpressionUUID->"43a3c1b5-fa22-46f1-8447-6e96284c7093"]
+}, Open  ]]
+}
+]
+*)
+

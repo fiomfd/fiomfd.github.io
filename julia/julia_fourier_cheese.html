@@ -1,0 +1,170 @@
+<html>
+<head>
+<title>Fourier analysis and multiresolution analysis: human voice</title>
+<meta http-equiv="content-type" content="text/html:charset=UTF-8">
+<link rel="Shortcut Icon" href="favicon.ico">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+</head>
+
+<body text=#4169E1 bgcolor=#FFFFF0 vlink=#0000CD link=#0000CD>
+<font face="Times New Roman">
+
+<center>
+<h2>
+Fourier analysis and multiresolution analysis
+<br>
+human voice
+</h2>
+
+<table border>
+<tr>
+<td colspan="2">
+<center>
+Fourier Analysis
+</center>
+</td>
+</tr>
+
+<tr>
+<td align=center>
+<legend>
+Analogue Signal
+<br>
+length \(T=3.1528344671201816\) [sec]
+</legend>
+<a href="./sound_cheese/cheese_signal.png" target="_blank"><img src="./sound_cheese/cheese_signal.png" height="280"></a> 
+</td>
+<td align=center>
+<legend>
+Discrete Time Signal
+<br>
+frequency \(f_s=22050\) [Hz]
+<br>
+length \(N=69520\)
+</legend>
+<a href="./sound_cheese/cheese_dsignal.png" target="_blank"><img src="./sound_cheese/cheese_dsignal.png" height="280"></a> 
+</td>
+</tr>
+
+<tr>
+<td align=center>
+<legend>Fourier Transform</legend>
+<a href="./sound_cheese/cheese_fft.png" target="_blank"><img src="./sound_cheese/cheese_fft.png" height="280"></a> 
+</td>
+<td align=center>
+<legend>Discrete Fourier Transform</legend>
+<a href="./sound_cheese/cheese_dft.png" target="_blank"><img src="./sound_cheese/cheese_dft.png" height="280"></a> 
+</td>
+</tr>
+
+<tr>
+<td align=center>
+<legend>Fourier Transform (shifted)</legend>
+<a href="./sound_cheese/cheese_fft_shifted.png" target="_blank"><img src="./sound_cheese/cheese_fft_shifted.png" height="280"></a> 
+</td>
+<td align=center>
+<legend>Discrete Fourier Transform (shifted)</legend>
+<a href="./sound_cheese/cheese_dft_shifted.png" target="_blank"><img src="./sound_cheese/cheese_dft_shifted.png" height="280"></a> 
+</td>
+</tr>
+
+<tr>
+<td align=center>
+<legend>Spectrogram</legend>
+<a href="./sound_cheese/cheese_spectrogram.png" target="_blank"><img src="./sound_cheese/cheese_spectrogram.png" height="280"></a> 
+</td>
+<td align=center>
+<legend>Discrete pectrogram</legend>
+<a href="./sound_cheese/cheese_dspectrogram.png" target="_blank"><img src="./sound_cheese/cheese_dspectrogram.png" height="280"></a> 
+</td>
+</tr>
+
+</table>
+
+<br>
+<br>
+
+<table border>
+<tr>
+<td colspan="2">
+<center>
+Multiresolution Analysis
+&nbsp; 
+<a href="./sound_cheese/cheese_multiresolution.jl" target="_blank">cheese_multiresolution.jl</a>
+</center>
+</td>
+</tr>
+
+<tr>
+<td align=center>
+<legend>
+Level 1
+</legend>
+<a href="./sound_cheese/cheese_db2_level1.png" target="_blank"><img src="./sound_cheese/cheese_db2_level1.png" height="240"></a> 
+</td>
+<td align=center>
+<legend>
+Level 1 Decomposition
+</legend>
+<a href="./sound_cheese/cheese_db2_level1_ad.png" target="_blank"><img src="./sound_cheese/cheese_db2_level1_ad.png" height="240"></a> 
+</td>
+</tr>
+
+<tr>
+<td align=center>
+<legend>
+Level 2
+</legend>
+<a href="./sound_cheese/cheese_db2_level2.png" target="_blank"><img src="./sound_cheese/cheese_db2_level2.png" height="240"></a> 
+</td>
+<td align=center>
+<legend>
+Level 2 Decomposition
+</legend>
+<a href="./sound_cheese/cheese_db2_level2_ad.png" target="_blank"><img src="./sound_cheese/cheese_db2_level2_ad.png" height="240"></a> 
+</td>
+</tr>
+
+<tr>
+<td align=center>
+<legend>
+Level 3
+</legend>
+<a href="./sound_cheese/cheese_db2_level3.png" target="_blank"><img src="./sound_cheese/cheese_db2_level3.png" height="240"></a> 
+</td>
+<td align=center>
+<legend>
+Level 3 Decomposition
+</legend>
+<a href="./sound_cheese/cheese_db2_level3_ad.png" target="_blank"><img src="./sound_cheese/cheese_db2_level3_ad.png" height="240"></a> 
+</td>
+</tr>
+
+<tr>
+<td align=center>
+<legend>
+Level 4
+</legend>
+<a href="./sound_cheese/cheese_db2_level4.png" target="_blank"><img src="./sound_cheese/cheese_db2_level4.png" height="240"></a> 
+</td>
+<td align=center>
+<legend>
+Level 4 Decomposition
+</legend>
+<a href="./sound_cheese/cheese_db2_level4_ad.png" target="_blank"><img src="./sound_cheese/cheese_db2_level4_ad.png" height="240"></a> 
+</td>
+</tr>
+
+</table>
+
+</font>
+</body>
+</html>
+
+
+
+
+
+

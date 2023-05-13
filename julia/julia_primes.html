@@ -1,0 +1,65 @@
+<html>
+<head>
+<title>Prime Number Theorem</title>
+<meta http-equiv="content-type" content="text/html:charset=UTF-8">
+<link rel="Shortcut Icon" href="favicon.ico">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript" id="MathJax-script" async
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+</head>
+
+<body text=#4169E1 bgcolor=#FFFFF0 vlink=#0000CD link=#0000CD>
+<font face="Times New Roman">
+
+<h2>Prime Number Theorem</h2>
+
+Let \(\pi(x)\) be the number of primes less than or equal to \(x>1\).
+The prime number theorem asserts that 
+<center>
+<font color=blue size=5>
+\[
+\pi(x) \bigg/ \frac{x}{\log{x}} \rightarrow 1
+\quad
+(x \rightarrow \infty).
+\]
+</font>
+</center>
+
+Historically, Jacques Hadamard and Charles Jean de la Vall&eacute;e-Poussin independently proved this theorem in 1896. They made full use of the Riemann zeta function 
+
+\[
+\zeta(s)
+:=
+\sum_{n=1}^\infty
+\frac{1}{n^s},
+\quad
+s\in\mathbb{C}, 
+\quad
+\operatorname{Re}(s)>1
+\]
+
+and complex analysis for this. After that , Atle Selberg and Paul Erd&ouml;s independently proved this theorem only by using calculus of one-variable in 1949. 
+
+<br>
+<br>
+<table border>
+<tr>
+<td align=center>
+<legend>Prime Number Theorem<legend>
+<a href="./primes/pnt.jl" target="_blank">pnt.jl</a>
+<br>
+<img src="./primes/pnt.png" width="800mm">
+</td>
+</tr>
+</table>
+
+</font>
+</body>
+</html>
+
+
+
+
+
+

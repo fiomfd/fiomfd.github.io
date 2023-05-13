@@ -1,0 +1,71 @@
+<html>
+<head>
+<title>X-ray Transform and Reconstruction: stomach</title>
+<meta http-equiv="content-type" content="text/html:charset=UTF-8">
+<link rel="Shortcut Icon" href="favicon.ico">
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+</head>
+
+<body text=#4169E1 bgcolor=#FFFFF0 vlink=#0000CD link=#0000CD>
+<font face="Times New Roman">
+
+<h2>X-ray Transform and Reconstruction: stomach</h2>
+
+We use a program <a href="./xray_stomach/xray.jl" target="_blank">xray.jl</a>, which I found on the internet. However, I am very sorry to forget who constructed this program. This file was for older version of the Julia Programming Language and I change "radon" of xray.jl. The unfiltered and filtered back-projections are obtained by my own program. See <a href="./xray_stomach/stomach.jl" target="_blank">stomach.jl</a> for the detail. 
+<br>
+<br>
+<table border>
+<tr>
+<td align=center colspan="2">
+<legend>All in One<legend>
+<a href="./xray_stomach/micro_stomach.png" target="_blank"><img src="./xray_stomach/xray_stomach.png" height="300"></a> 
+</td>
+</tr>
+
+<tr>
+<td align=center>
+<legend>Original Grayscale Image<legend>
+<a href="./xray_stomach/xray_stomach_1.png" target="_blank"><img src="./xray_stomach/xray_stomach_1.png" height="200"></a> 
+</td>
+<td align=center>
+<legend>X-ray transform</legend>
+<a href="./xray_stomach/xray_stomach_2.png" target="_blank"><img src="./xray_stomach/xray_stomach_2.png" height="200"></a>
+</td>
+</tr>
+
+<tr>
+<td align=center>
+<legend>Unfiltered Backprojection<legend>
+<a href="./xray_stomach/xray_stomach_3.png" target="_blank"><img src="./xray_stomach/xray_stomach_3.png" height="200"></a>
+</td>
+<td align=center>
+<legend>Reconstruction, i.e., Filtered Backprojection</legend>
+<a href="./xray_stomach/xray_stomach_4.png" target="_blank"><img src="./xray_stomach/xray_stomach_4.png" height="200"></a>  
+</td>
+</tr>
+
+<tr>
+<td colspan="2" align="left">
+"Unfiltered back projection" is called "Back Projection" 
+which is mathematically the dual X-ray transform. 
+"Filtered back projection" 
+is so-called the reconstruction formula 
+for the X-ray transform mathematically,  
+that is, the back projection applied by the filter 
+which is mathematically the square root 
+of the nonnegative Laplacian on the plane. 
+</td>
+</tr>
+
+</table>
+
+</font>
+</body>
+</html>
+
+
+
+
+
+

@@ -1,0 +1,108 @@
+
+\documentclass[a4paper,12pt]{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{eucal}
+\usepackage{amsthm}
+%-------des environnements---------------------
+\catcode`\@=11
+
+\newcounter{proclaim}[section]
+
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{coro}[thm]{Corollary}
+\theoremstyle{definition}
+\newtheorem{defi}{Definition}
+\newtheorem{example}{Example}
+\newtheorem{rem}[thm]{Remark}
+
+%--------------------Nouvelles Fontes--------------------
+
+%fonte bb:
+\font\tenms=msbm10 scaled 1200
+\font\sevenms=msbm10
+\font\fivems=msbm8
+\newfam\bbfam \textfont\bbfam=\tenms \scriptfont\bbfam=\sevenms
+\scriptscriptfont\bbfam=\fivems
+\def\bb{\fam\bbfam\tenms}
+
+%-------------------Quelques Caract\`eres-----------------
+
+% Ensembles de Nombres
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\ord}{{\mathcal O}}
+%\newcommand{\1}{{\mathbb 1}}
+\def\Q{{\bb Q}}
+\def\re{\mathop{\rm Re}\nolimits}
+\def\im{\mathop{\rm Im}\nolimits}
+\def\1{1\!{\rm I}}
+
+\def\adots{\mathinner{\mkern2mu\raise 1pt\hbox{.}\mkern3mu\raise 4pt\hbox
+{.}\mkern 1mu\raise 7pt\hbox{.}}}
+
+\def\disp{\displaystyle}
+\def\nbls{\normalbaselineskip}
+
+\def\comment#1{\medskip
+\hskip -2em\begin{minipage}[l]{6in}
+\noindent\sf #1\end{minipage}\bigskip}
+
+\def\square{\hbox{\vrule\vbox{\hrule\phantom{o}\hrule}\vrule}}
+
+\newenvironment{pre}{\noindent{\bf Sketch of the proof:} \hskip 2pt}{{\null\hfill$\Box$}\medskip}
+\newenvironment{pre1}
+{\noindent{\bf Sketch of the proof of Theorem \ref{propagator}:}
+\hskip 2pt}{{\null\hfill$\Box$}\medskip}
+
+
+%---------------references----------------------
+
+\def\eq#1{(\ref{#1})}
+\def\rf#1#2#3#4{{\parindent 3,5em
+\item [{\hbox to \parindent {\enskip [#1]\hfill}}] #2: {\sl
+#3}\hfill\break #4
+\hfill}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\pagestyle{empty}
+
+\title{双曲型不動点における超局所解の構造と\\そのスペクトル問題への応用}
+
+\author{藤家雪朗 (立命館大学)}
+
+\pagestyle{empty}
+
+\begin{document}
+
+\date{}
+
+
+\maketitle
+
+\thispagestyle{empty}
+
+相空間上の滑らかな関数$p$と，それを量子化した
+準古典擬微分作用素$P$を考える．方程式
+$Pu=0$の解の特異性は，$p$のハミルトン
+ベクトル場の解曲線（ハミルトン流）に沿って伝播することがよく知
+られている．
+
+$p$の双曲型不動点で，解の特異性の伝播の様子を考える．
+双曲型不動点へは，安定多様体上のすべての点からハミルトン流が流れ込む．
+不動点を除く安定多様体上のすべての点で解が特異性を持たなければ，
+不動点の近傍でも解は特異性を持たないことを示す．さらに，安定多様体上で
+超局所解が与えられた時，それを用いて不安定多様体上で超局所解を表示する．
+後半では，この結果を量子共鳴の漸近分布の問題に応用する．
+
+
+\end{document}
+%%%%%%
+%%%%%%
+%%%%%%

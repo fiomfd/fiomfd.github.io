@@ -7619,7 +7619,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [1]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-julia"><pre><span></span><span class="k">using</span><span class="w"> </span><span class="n">Random</span>
@@ -7650,6 +7650,7 @@ a.anchor-link {
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h2 id="Topics">Topics<a class="anchor-link" href="#Topics">¶</a></h2><ol>
+<li>The Collatz conjecture</li>
 <li>RGB images</li>
 <li>RGB movies</li>
 <li>Singular value decomposition and low rank approximation</li>
@@ -7664,13 +7665,135 @@ a.anchor-link {
 </div>
 </div>
 </div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=cf05b4b9-766d-4089-a07d-e4d8895bf437">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="1.-The-Collatz-conjecture">1. The Collatz conjecture<a class="anchor-link" href="#1.-The-Collatz-conjecture">¶</a></h2><p>Generate a sequence $\{x[n]\}_{n=1}^\infty$ by the following process:</p>
+<ol>
+<li>Given an arbitrary positive integer $m$, set $x[1]:=m$.</li>
+<li>For $n=2,3,4,\dotsc$, if $x[n-1]:=1$, stop the process, otherwise</li>
+</ol>
+<p>\begin{aligned}
+  x[n]
+&amp; :=\dfrac{x[n-1]}{2}\quad (x[n-1]\ \text{is even}),
+\\
+  x[n]
+&amp; :=
+  3x[n-1]+1\quad (x[n-1]\ \text{is odd}).
+\end{aligned}</p>
+<p>In 1937 Lothar Collatz introduce the following conjecture:</p>
+<h4 id="For-any-$m=1,2,3,%5Cdotsc$,-there-exists-$n_m=1,2,3,%5Cdotsc$-such-that-$x%5Bn_m%5D=1$.">For any $m=1,2,3,\dotsc$, there exists $n_m=1,2,3,\dotsc$ such that $x[n_m]=1$.<a class="anchor-link" href="#For-any-$m=1,2,3,%5Cdotsc$,-there-exists-$n_m=1,2,3,%5Cdotsc$-such-that-$x%5Bn_m%5D=1$.">¶</a></h4><p>See <a href="https://doi.org/10.1080/00029890.1985.11971528">this paper</a> for instance. Here are some examples:</p>
+<p>$1,
+\quad 
+2\rightarrow1, \quad 3\rightarrow10\rightarrow5\rightarrow16\rightarrow8\rightarrow4\rightarrow2\rightarrow1, 
+\quad
+4\rightarrow2\rightarrow1, 
+\quad\dotsc$</p>
+<p>Barina verified the Collatz conjecture is true for all $m\leqq2^{68}$ using workstations. See <a href="https://doi.org/10.1007/s11227-020-03368-x">this paper</a>.</p>
+<p>We examine this conjecture for $m=1,2,3,\dotsc,500$.</p>
+<h4 id="Run-the-following-cell-to-create-Collatz-sequences-for-$x%5B1%5D=m=1,%5Cdotsc,500$,-and-observe-the-behavior-of-each-sequence.">Run the following cell to create Collatz sequences for $x[1]=m=1,\dotsc,500$, and observe the behavior of each sequence.<a class="anchor-link" href="#Run-the-following-cell-to-create-Collatz-sequences-for-$x%5B1%5D=m=1,%5Cdotsc,500$,-and-observe-the-behavior-of-each-sequence.">¶</a></h4>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=fba5388c-8236-41b7-beec-b21f744c0538">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-julia"><pre><span></span><span class="c"># upper bound of m</span>
+<span class="n">M</span><span class="o">=</span><span class="mi">500</span><span class="p">;</span>
+
+<span class="n">x</span><span class="o">=</span><span class="n">ones</span><span class="p">(</span><span class="kt">Int64</span><span class="p">,</span><span class="mi">150</span><span class="p">);</span>
+
+<span class="n">animcollatz</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nd">@animate</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="n">m</span><span class="o">=</span><span class="mi">1</span><span class="o">:</span><span class="n">M</span>
+
+<span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">=</span><span class="n">m</span>
+<span class="k">for</span><span class="w"> </span><span class="n">n</span><span class="o">=</span><span class="mi">2</span><span class="o">:</span><span class="mi">150</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="n">x</span><span class="p">[</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">==</span><span class="mi">1</span>
+<span class="w">       </span><span class="n">x</span><span class="p">[</span><span class="n">n</span><span class="p">]</span><span class="o">=</span><span class="n">x</span><span class="p">[</span><span class="n">n</span><span class="p">]</span>
+<span class="w">    </span><span class="k">else</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="n">mod</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span><span class="mi">2</span><span class="p">)</span><span class="o">==</span><span class="mi">0</span>
+<span class="w">            </span><span class="n">x</span><span class="p">[</span><span class="n">n</span><span class="p">]</span><span class="o">=</span><span class="kt">Int64</span><span class="o">.</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
+<span class="w">        </span><span class="k">else</span><span class="w"> </span><span class="n">x</span><span class="p">[</span><span class="n">n</span><span class="p">]</span><span class="o">=</span><span class="mi">3</span><span class="o">*</span><span class="n">x</span><span class="p">[</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">+</span><span class="mi">1</span>
+<span class="w">        </span><span class="k">end</span>
+<span class="w">    </span><span class="k">end</span>
+<span class="k">end</span>
+<span class="w">	</span>
+<span class="n">scatter</span><span class="p">(</span><span class="n">x</span><span class="p">,</span>
+<span class="w">	 </span><span class="n">ylim</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">1000</span><span class="p">),</span>
+<span class="w">	 </span><span class="n">title</span><span class="o">=</span><span class="s">"Collatz sequence x[n] with x[1]=</span><span class="si">$m</span><span class="s">"</span><span class="p">,</span>
+<span class="w">	 </span><span class="n">xlabel</span><span class="o">=</span><span class="sa">L</span><span class="s">"n"</span><span class="p">,</span>
+<span class="w">	 </span><span class="n">ylabel</span><span class="o">=</span><span class="sa">L</span><span class="s">"x[n]"</span><span class="p">,</span>
+<span class="w">	 </span><span class="n">xticks</span><span class="o">=</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">20</span><span class="p">,</span><span class="mi">40</span><span class="p">,</span><span class="mi">60</span><span class="p">,</span><span class="mi">80</span><span class="p">,</span><span class="mi">100</span><span class="p">,</span><span class="mi">120</span><span class="p">,</span><span class="mi">140</span><span class="p">]),</span>
+<span class="w">	 </span><span class="n">legend</span><span class="o">=</span><span class="nb">false</span><span class="p">)</span>
+
+<span class="k">end</span>
+
+<span class="n">gif</span><span class="p">(</span><span class="n">animcollatz</span><span class="p">,</span><span class="w"> </span><span class="s">"rgb_animation.gif"</span><span class="p">,</span><span class="w"> </span><span class="n">fps</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">5</span><span class="p">)</span><span class="w">	</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=e321daff-17a3-4470-9b8f-eb38ab5bdc05">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h4 id="Run-the-following-cell-to-plot-the-pairs-of-$(m,n_m)$-for-$m=1,%5Cdotsc,500$-in-a-scatter-graph.">Run the following cell to plot the pairs of $(m,n_m)$ for $m=1,\dotsc,500$ in a scatter graph.<a class="anchor-link" href="#Run-the-following-cell-to-plot-the-pairs-of-$(m,n_m)$-for-$m=1,%5Cdotsc,500$-in-a-scatter-graph.">¶</a></h4>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=2144f77f-2f65-4339-b65d-5f3c56ff2170">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-julia"><pre><span></span><span class="k">function</span><span class="w"> </span><span class="n">collatz</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+<span class="w">    </span><span class="n">n</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="o">÷</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="mi">3</span><span class="n">n</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span>
+<span class="k">end</span>
+
+<span class="k">function</span><span class="w"> </span><span class="n">stopping_time</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+<span class="w">        </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">steps</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">m</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span>
+<span class="w">        </span><span class="k">while</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">1</span>
+<span class="w">              </span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">collatz</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="w">              </span><span class="n">steps</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="mi">1</span>
+<span class="w">		</span><span class="k">end</span>
+<span class="w">			</span><span class="k">return</span><span class="w"> </span><span class="n">steps</span>
+<span class="k">end</span>
+
+<span class="n">N</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="o">:</span><span class="mi">500</span>
+<span class="n">steps</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="n">stopping_time</span><span class="p">(</span><span class="n">m</span><span class="p">)</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="n">m</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">N</span><span class="p">]</span>
+
+<span class="n">scatter</span><span class="p">(</span><span class="n">N</span><span class="p">,</span><span class="w"> </span><span class="n">steps</span><span class="p">,</span><span class="w"> </span>
+<span class="w">		</span><span class="n">legend</span><span class="o">=</span><span class="nb">false</span><span class="p">,</span>
+<span class="w">		</span><span class="n">xlabel</span><span class="o">=</span><span class="sa">L</span><span class="s">"\mathrm{Initial}\ \mathrm{value}\ \ m"</span><span class="p">,</span><span class="w"> </span>
+<span class="w">		</span><span class="n">ylabel</span><span class="o">=</span><span class="sa">L</span><span class="s">"\mathrm{Steps}\ \ n_m\ \  \mathrm{to}\ \ 1"</span><span class="p">,</span>
+<span class="w">        </span><span class="n">title</span><span class="o">=</span><span class="s">"Collatz stopping steps"</span><span class="p">,</span><span class="w"> </span><span class="n">markersize</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=4d9cca64-8b2d-45c0-9985-f3b471e3433c">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="1.-RGB-images">1. RGB images<a class="anchor-link" href="#1.-RGB-images">¶</a></h2><p>The data of an RGB image is a triplet of matrices of the same size. This is essentially a triplet of grayscale images of the same size. These three grayscale images, colored red, green, and blue, are then overlaid to form an RGB image.</p>
+<h2 id="2.-RGB-images">2. RGB images<a class="anchor-link" href="#2.-RGB-images">¶</a></h2><p>The data of an RGB image is a triplet of matrices of the same size. This is essentially a triplet of grayscale images of the same size. These three grayscale images, colored red, green, and blue, are then overlaid to form an RGB image.</p>
 <h4 id="Run-the-following-cell-to-create-three-$m%7B%5Ctimes%7Dn=10%5Ctimes15$-matrices-$R,G,B$-by-random-numbers.">Run the following cell to create three $m{\times}n=10\times15$ matrices $R,G,B$ by random numbers.<a class="anchor-link" href="#Run-the-following-cell-to-create-three-$m%7B%5Ctimes%7Dn=10%5Ctimes15$-matrices-$R,G,B$-by-random-numbers.">¶</a></h4>
 </div>
 </div>
@@ -7737,7 +7860,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="2.-RGB-movies">2. RGB movies<a class="anchor-link" href="#2.-RGB-movies">¶</a></h2><p>The data of an RGB movie is the finite number of triplets of matrices of the same size. This is essentially a sequence of RGB images of the same size.</p>
+<h2 id="3.-RGB-movies">3. RGB movies<a class="anchor-link" href="#3.-RGB-movies">¶</a></h2><p>The data of an RGB movie is the finite number of triplets of matrices of the same size. This is essentially a sequence of RGB images of the same size.</p>
 <h4 id="Run-the-following-cell-to-create-100-$m%7B%5Ctimes%7Dn=10%5Ctimes15$-RGB-images-by-random-numbers.">Run the following cell to create 100 $m{\times}n=10\times15$ RGB images by random numbers.<a class="anchor-link" href="#Run-the-following-cell-to-create-100-$m%7B%5Ctimes%7Dn=10%5Ctimes15$-RGB-images-by-random-numbers.">¶</a></h4>
 </div>
 </div>
@@ -7747,7 +7870,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [4]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-julia"><pre><span></span><span class="n">Random</span><span class="o">.</span><span class="n">seed!</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
@@ -7782,7 +7905,7 @@ a.anchor-link {
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-julia"><pre><span></span><span class="n">anim2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nd">@animate</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="n">k</span><span class="o">=</span><span class="mi">1</span><span class="o">:</span><span class="n">K</span>
+<div class="highlight hl-julia"><pre><span></span><span class="n">animrgb</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nd">@animate</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="n">k</span><span class="o">=</span><span class="mi">1</span><span class="o">:</span><span class="n">K</span>
 
 <span class="n">movieR</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">colorview</span><span class="p">(</span><span class="n">RGB</span><span class="p">,</span><span class="w"> </span><span class="n">RR</span><span class="p">[</span><span class="o">:</span><span class="p">,</span><span class="o">:</span><span class="p">,</span><span class="n">k</span><span class="p">],</span><span class="w"> </span><span class="n">Z</span><span class="p">,</span><span class="w"> </span><span class="n">Z</span><span class="p">)</span>
 <span class="n">movieG</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">colorview</span><span class="p">(</span><span class="n">RGB</span><span class="p">,</span><span class="w"> </span><span class="n">Z</span><span class="p">,</span><span class="w"> </span><span class="n">GG</span><span class="p">[</span><span class="o">:</span><span class="p">,</span><span class="o">:</span><span class="p">,</span><span class="n">k</span><span class="p">],</span><span class="w"> </span><span class="n">Z</span><span class="p">)</span>
@@ -7798,7 +7921,7 @@ a.anchor-link {
 
 <span class="k">end</span>
 
-<span class="n">gif</span><span class="p">(</span><span class="n">anim2</span><span class="p">,</span><span class="w"> </span><span class="s">"rgb_animation.gif"</span><span class="p">,</span><span class="w"> </span><span class="n">fps</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">3</span><span class="p">)</span><span class="w">	</span>
+<span class="n">gif</span><span class="p">(</span><span class="n">animrbg</span><span class="p">,</span><span class="w"> </span><span class="s">"rgb_animation.gif"</span><span class="p">,</span><span class="w"> </span><span class="n">fps</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">3</span><span class="p">)</span><span class="w">	</span>
 </pre></div>
 </div>
 </div>
@@ -7811,7 +7934,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="3.-Singular-value-decomposition-and-low-rank-approximation">3. Singular value decomposition and low rank approximation<a class="anchor-link" href="#3.-Singular-value-decomposition-and-low-rank-approximation">¶</a></h2><p>In general an $m{\times}n$ matrix $A=\begin{bmatrix}\vec{a}_1 &amp; \dotsb &amp; \vec{a}_n \end{bmatrix}$ has a specific nonnegative integer which is called as the rank of  $A$ defined by</p>
+<h2 id="4.-Singular-value-decomposition-and-low-rank-approximation">4. Singular value decomposition and low rank approximation<a class="anchor-link" href="#4.-Singular-value-decomposition-and-low-rank-approximation">¶</a></h2><p>In general an $m{\times}n$ matrix $A=\begin{bmatrix}\vec{a}_1 &amp; \dotsb &amp; \vec{a}_n \end{bmatrix}$ has a specific nonnegative integer which is called as the rank of  $A$ defined by</p>
 <p>$$r
 :=
 \operatorname{dim}\bigl(
@@ -7844,7 +7967,7 @@ x_1\vec{a}_1+\dotsb+x_n\vec{a}_n
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [6]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-julia"><pre><span></span><span class="n">url</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"https://raw.githubusercontent.com/fiomfd/hands-on/refs/heads/main/data/hibiscus.jpg"</span>
@@ -7934,7 +8057,7 @@ x_1\vec{a}_1+\dotsb+x_n\vec{a}_n
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="4.-Wavelet-decomposition">4. Wavelet decomposition<a class="anchor-link" href="#4.-Wavelet-decomposition">¶</a></h2><p>The discrete wavelet is a pair of orthonomal two vectors $\vec{u}$ and $\vec{v}$ satisfying some condition, and the most typical example of the discrete wavelets is the Haar wavelet. They are very simple vectors:</p>
+<h2 id="5.-Wavelet-decomposition">5. Wavelet decomposition<a class="anchor-link" href="#5.-Wavelet-decomposition">¶</a></h2><p>The discrete wavelet is a pair of orthonomal two vectors $\vec{u}$ and $\vec{v}$ satisfying some condition, and the most typical example of the discrete wavelets is the Haar wavelet. They are very simple vectors:</p>
 <p>$$\vec{u}
 =
 \frac{1}{\sqrt{2}}
@@ -8029,7 +8152,7 @@ A_2
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [8]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-julia"><pre><span></span><span class="c"># Choose 0 &lt; gamma &lt; 0.5 </span>
@@ -8184,7 +8307,7 @@ A_2
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="5.-Public-data-and-visualization">5. Public data and visualization<a class="anchor-link" href="#5.-Public-data-and-visualization">¶</a></h2><p>Let $\vec{x}=\bigl[x[1],\dotsc,x[N]\bigl]^T\in\mathbb{R}^N$ be an $N$-dimensional real column vector. This can describes data such as $x[i]$ means the highest temperature of the $i$-th day for $i=1,\dotsc,N$. One can exploit some information such as the average $m$ and the variance $\sigma^2$:</p>
+<h2 id="6.-Public-data-and-visualization">6. Public data and visualization<a class="anchor-link" href="#6.-Public-data-and-visualization">¶</a></h2><p>Let $\vec{x}=\bigl[x[1],\dotsc,x[N]\bigl]^T\in\mathbb{R}^N$ be an $N$-dimensional real column vector. This can describes data such as $x[i]$ means the highest temperature of the $i$-th day for $i=1,\dotsc,N$. One can exploit some information such as the average $m$ and the variance $\sigma^2$:</p>
 <p>$$m:=\frac{1}{N}\sum_{i=1}^Nx[i],
 \quad
 \sigma^2:=\frac{1}{N}\sum_{i=1}^N(x[i]-m)^2.$$</p>
@@ -8343,7 +8466,7 @@ of 1884-present at the Hong Kong Observatory. The starting dates of  the theree 
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="6.-Central-limit-theorem-for-the-binomial-distribution-$B(n,p)$">6. Central limit theorem for the binomial distribution $B(n,p)$<a class="anchor-link" href="#6.-Central-limit-theorem-for-the-binomial-distribution-$B(n,p)$">¶</a></h2><p>Let $n$ be a positive integer, and let $p$ be a constant satisfying $0 &lt; p &lt; 1$.
+<h2 id="7.-Central-limit-theorem-for-the-binomial-distribution-$B(n,p)$">7. Central limit theorem for the binomial distribution $B(n,p)$<a class="anchor-link" href="#7.-Central-limit-theorem-for-the-binomial-distribution-$B(n,p)$">¶</a></h2><p>Let $n$ be a positive integer, and let $p$ be a constant satisfying $0 &lt; p &lt; 1$.
 Denote by $B(n,p)$ the the binomial distribution of $n$ iid experiments $X_1,\dotsc,X_n$ with probability $p$, that is, a discrete probability distribution on $\{0,1,\dotsc,n\}$ such that</p>
 <p>$$\operatorname{P}(S_n=k)=\frac{n!}{k!(n-k)!}p^k(1-p)^{n-k}, 
 \quad
@@ -8421,7 +8544,7 @@ a \leqq \frac{S_n-pn}{\sqrt{np(1-p)}} \leqq b
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="7.-Taylor-series-of-$%5Csin%7Bx%7D$">7. Taylor series of $\sin{x}$<a class="anchor-link" href="#7.-Taylor-series-of-$%5Csin%7Bx%7D$">¶</a></h2><p>It is well-known that $\sin{x}$ ($x\in\mathbb{R}$) equals a power series of $s$:</p>
+<h2 id="8.-Taylor-series-of-$%5Csin%7Bx%7D$">8. Taylor series of $\sin{x}$<a class="anchor-link" href="#8.-Taylor-series-of-$%5Csin%7Bx%7D$">¶</a></h2><p>It is well-known that $\sin{x}$ ($x\in\mathbb{R}$) equals a power series of $s$:</p>
 <p>$$\sin{x}=\sum_{k=0}^\infty\frac{(-1)^kx^{2k+1}}{(2k+1)!}, \quad x\in\mathbb{R}.$$</p>
 <p>The right hand side is said to be the Taylor series of $\sin{x}$ or the Taylor expansion of $\sin{x}$. More precisely, for any $R&gt;0$,</p>
 <p>$$\max_{x\in[-R,R]}
@@ -8491,7 +8614,7 @@ a \leqq \frac{S_n-pn}{\sqrt{np(1-p)}} \leqq b
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="8.-Fourier-series-of-a-step-function-and-a-sawtooth-function">8. Fourier series of a step function and a sawtooth function<a class="anchor-link" href="#8.-Fourier-series-of-a-step-function-and-a-sawtooth-function">¶</a></h2><p>Let $g(x)$ and $h(x)$ be a $1$-periodic step function and a $1$ periodic sawtooth function, that is,</p>
+<h2 id="9.-Fourier-series-of-a-step-function-and-a-sawtooth-function">9. Fourier series of a step function and a sawtooth function<a class="anchor-link" href="#9.-Fourier-series-of-a-step-function-and-a-sawtooth-function">¶</a></h2><p>Let $g(x)$ and $h(x)$ be a $1$-periodic step function and a $1$ periodic sawtooth function, that is,</p>
 <p>$$\begin{aligned}
   g(x)
 &amp; :=
@@ -8614,7 +8737,7 @@ a \leqq \frac{S_n-pn}{\sqrt{np(1-p)}} \leqq b
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [18]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-julia"><pre><span></span><span class="c"># Set Maximun number of terms M2</span>
@@ -8678,13 +8801,15 @@ a \leqq \frac{S_n-pn}{\sqrt{np(1-p)}} \leqq b
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-julia"><pre><span></span><span class="n">animgibbs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nd">@animate</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="n">K2</span><span class="o">=</span><span class="mi">1</span><span class="o">:</span><span class="n">M2</span><span class="o">+</span><span class="mi">1</span>
 
+<span class="n">N2</span><span class="o">=</span><span class="n">K2</span><span class="o">-</span><span class="mi">1</span>
+
 <span class="n">G1</span><span class="o">=</span><span class="n">plot</span><span class="p">(</span><span class="n">x2</span><span class="p">,</span><span class="n">S2</span><span class="p">[</span><span class="n">K2</span><span class="p">,</span><span class="o">:</span><span class="p">],</span>
 <span class="w">        </span><span class="n">grid</span><span class="o">=</span><span class="nb">false</span><span class="p">,</span>
 <span class="w">		</span><span class="n">linewidth</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>
 <span class="w">		</span><span class="n">xlim</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="mf">0.15</span><span class="p">,</span><span class="mf">1.15</span><span class="p">),</span>
 <span class="w">		</span><span class="n">ylim</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="o">/</span><span class="mi">8</span><span class="p">,</span><span class="mi">9</span><span class="o">/</span><span class="mi">8</span><span class="p">),</span>
-<span class="w">		</span><span class="n">title</span><span class="o">=</span><span class="s">"Step Function and its Fourier Series"</span><span class="p">,</span>
-<span class="w">        </span><span class="n">titlefontsize</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span>
+<span class="w">		</span><span class="n">title</span><span class="o">=</span><span class="s">"Step Function and its Fourier Series, K=</span><span class="si">$N2</span><span class="s">"</span><span class="p">,</span>
+<span class="w">        </span><span class="n">titlefontsize</span><span class="o">=</span><span class="mi">9</span><span class="p">,</span>
 <span class="w">		</span><span class="n">xticks</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">([</span><span class="mi">0</span><span class="w"> </span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="w"> </span><span class="mi">1</span><span class="p">;],</span><span class="w"> </span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">]),</span>
 <span class="w">		</span><span class="n">yticks</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">([</span><span class="mi">0</span><span class="w"> </span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="w"> </span><span class="mi">1</span><span class="p">;],</span><span class="w"> </span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">]),</span>
 <span class="w">		</span><span class="n">xlabel</span><span class="o">=</span><span class="sa">L</span><span class="s">"x"</span><span class="p">,</span>
@@ -8700,8 +8825,8 @@ a \leqq \frac{S_n-pn}{\sqrt{np(1-p)}} \leqq b
 <span class="w">		</span><span class="n">linewidth</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>
 <span class="w">		</span><span class="n">xlim</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="mf">0.15</span><span class="p">,</span><span class="mf">1.15</span><span class="p">),</span>
 <span class="w">		</span><span class="n">ylim</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="o">/</span><span class="mi">8</span><span class="p">,</span><span class="mi">9</span><span class="o">/</span><span class="mi">8</span><span class="p">),</span>
-<span class="w">		</span><span class="n">title</span><span class="o">=</span><span class="s">"Sawtooth Function and its Fourier Series"</span><span class="p">,</span>
-<span class="w">        </span><span class="n">titlefontsize</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span>
+<span class="w">		</span><span class="n">title</span><span class="o">=</span><span class="s">"Sawtooth Function and its Fourier Series, N=</span><span class="si">$N2</span><span class="s">"</span><span class="p">,</span>
+<span class="w">        </span><span class="n">titlefontsize</span><span class="o">=</span><span class="mi">9</span><span class="p">,</span>
 <span class="w">		</span><span class="n">xticks</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">([</span><span class="mi">0</span><span class="w"> </span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="w"> </span><span class="mi">1</span><span class="p">;],</span><span class="w"> </span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">]),</span>
 <span class="w">		</span><span class="n">yticks</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">([</span><span class="mi">0</span><span class="w"> </span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="w"> </span><span class="mi">1</span><span class="p">;],</span><span class="w"> </span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">]),</span>
 <span class="w">		</span><span class="n">xlabel</span><span class="o">=</span><span class="sa">L</span><span class="s">"x"</span><span class="p">,</span>
@@ -8729,7 +8854,7 @@ a \leqq \frac{S_n-pn}{\sqrt{np(1-p)}} \leqq b
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="9.-Weyl's-equidistribution-theorem">9. Weyl's equidistribution theorem<a class="anchor-link" href="#9.-Weyl's-equidistribution-theorem">¶</a></h2><p>Let $\lfloor{x}\rfloor$ be the floor function for $x\in\mathbb{R}$, that is,
+<h2 id="10.-Weyl's-equidistribution-theorem">10. Weyl's equidistribution theorem<a class="anchor-link" href="#10.-Weyl's-equidistribution-theorem">¶</a></h2><p>Let $\lfloor{x}\rfloor$ be the floor function for $x\in\mathbb{R}$, that is,
 $$\lfloor{x}\rfloor:=\max\{m \in \mathbb{Z} : m \leqq x\},$$
 and set</p>
 <p>$$\langle{x}\rangle:=x-\lfloor{x}\rfloor.$$</p>

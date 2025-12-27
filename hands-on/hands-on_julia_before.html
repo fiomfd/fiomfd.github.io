@@ -7528,12 +7528,14 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="A.-Run-the-following-two-cells.">A. Run the following two cells.<a class="anchor-link" href="#A.-Run-the-following-two-cells.">¶</a></h2><p>If Julia is already isntalled in your Google Colab, go to B.</p>
+<h2 id="A.-Install-Julia-in-your-Google-Colab.">A. Install Julia in your Google Colab.<a class="anchor-link" href="#A.-Install-Julia-in-your-Google-Colab.">¶</a></h2><p>If Julia is already isntalled in your Google Colab, go to B.
+If Julia and Jupyter Notebook are installed in your computer, go to D.</p>
 <p>"Run" means</p>
 <ul>
 <li>Put the cursor on the cel and shift+enter on Jupyter Notebook</li>
 <li>Tap the circle near the upper left corner of the cell on Google Colab</li>
 </ul>
+<h4 id="Run-the-following-cell.">Run the following cell.<a class="anchor-link" href="#Run-the-following-cell.">¶</a></h4>
 </div>
 </div>
 </div>
@@ -7546,7 +7548,6 @@ a.anchor-link {
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-julia"><pre><span></span><span class="o">!</span><span class="n">curl</span><span class="w"> </span><span class="o">-</span><span class="n">fsSL</span><span class="w"> </span><span class="n">https</span><span class="o">://</span><span class="n">install</span><span class="o">.</span><span class="n">julialang</span><span class="o">.</span><span class="n">org</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">sh</span><span class="w"> </span><span class="o">-</span><span class="n">s</span><span class="w"> </span><span class="o">--</span><span class="w"> </span><span class="o">--</span><span class="n">yes</span>
-
 <span class="o">!</span><span class="n">julia</span><span class="w"> </span><span class="o">-</span><span class="n">v</span>
 </pre></div>
 </div>
@@ -7560,7 +7561,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="B.-Go-to-%22Runtime%22-$%5Crightarrow$-%22Change-runtime-type%22,-and-choose-%22Julia%22.">B. Go to "Runtime" $\rightarrow$ "Change runtime type", and choose "Julia".<a class="anchor-link" href="#B.-Go-to-%22Runtime%22-$%5Crightarrow$-%22Change-runtime-type%22,-and-choose-%22Julia%22.">¶</a></h2>
+<h2 id="B.-Choose-Julia-in-Runtime.">B. Choose Julia in Runtime.<a class="anchor-link" href="#B.-Choose-Julia-in-Runtime.">¶</a></h2><h4 id="Go-to-%22Runtime%22-$%5Crightarrow$-%22Change-runtime-type%22,-and-choose-%22Julia%22.">Go to "Runtime" $\rightarrow$ "Change runtime type", and choose "Julia".<a class="anchor-link" href="#Go-to-%22Runtime%22-$%5Crightarrow$-%22Change-runtime-type%22,-and-choose-%22Julia%22.">¶</a></h4>
 </div>
 </div>
 </div>
@@ -7571,8 +7572,8 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="C.-Installing-packages">C. Installing packages<a class="anchor-link" href="#C.-Installing-packages">¶</a></h2><p>If the following packages are already added, go to D.</p>
-<h4 id="Run-the-following-cell.-The-installation-takes-a-few-minutes.">Run the following cell. The installation takes a few minutes.<a class="anchor-link" href="#Run-the-following-cell.-The-installation-takes-a-few-minutes.">¶</a></h4>
+<h2 id="C.-Install-packages-in-your-Julia.">C. Install packages in your Julia.<a class="anchor-link" href="#C.-Install-packages-in-your-Julia.">¶</a></h2><p>If the following packages are already installed, go to D.</p>
+<h4 id="Run-the-following-cell.-The-installation-takes-5-10-minutes.">Run the following cell. The installation takes 5-10 minutes.<a class="anchor-link" href="#Run-the-following-cell.-The-installation-takes-5-10-minutes.">¶</a></h4>
 </div>
 </div>
 </div>
@@ -7610,7 +7611,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="D.-Run-the-following-cell-to-read-packages.">D. Run the following cell to read packages.<a class="anchor-link" href="#D.-Run-the-following-cell-to-read-packages.">¶</a></h2>
+<h2 id="D.-Load-packages.">D. Load packages.<a class="anchor-link" href="#D.-Load-packages.">¶</a></h2><h4 id="Run-the-following-cell.">Run the following cell.<a class="anchor-link" href="#Run-the-following-cell.">¶</a></h4>
 </div>
 </div>
 </div>
@@ -7637,6 +7638,20 @@ a.anchor-link {
 <span class="k">using</span><span class="w"> </span><span class="n">CSV</span>
 <span class="k">using</span><span class="w"> </span><span class="n">DataFrames</span>
 <span class="k">using</span><span class="w"> </span><span class="n">Statistics</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=0033d3a4-598f-4cb5-b04c-e21ca03b1b87">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-julia"><pre><span></span><span class="c"># space</span>
 </pre></div>
 </div>
 </div>

@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc 3.10" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>-</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      font-family: Times New Roman;
+      font-size: 11pt;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      white-space: pre-wrap;
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: 1.5em;}
+    div.column{flex: auto;}
+    @media screen {
+    div.columns{gap: min(4vw, 1.5em);}
+    div.column{overflow-x: auto;}
+    }
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <script defer=""
+  src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js"
+  type="text/javascript"></script>
+</head>
+<body>
+<h3 id="curriculum-vitae">Curriculum Vitae</h3>
+<p>Hiroyuki Chihara</p>
+<p>21 November 2026</p>
+<h4 id="personal-data">Personal Data</h4>
+<ul>
+<li>Name: Hiroyuki CHIHARA</li>
+<li>ORCiD ID: <a
+href="https://orcid.org/0000-0003-1491-7103">0000-0003-1491-7103</a></li>
+<li>Date of Birth: <!-- October 1964 (62 years old) --></li>
+<li>Nationality: Japanese</li>
+<li>Gender: Male</li>
+<li>e-mail: <!-- hc@trevally.net (Gmail) --></li>
+<li>Phone: <!-- +81 90 6221 5340 --></li>
+</ul>
+<h4 id="education">Education</h4>
+<ul>
+<li><p>23 May 1997: Doctor of Engineering in Applied Mathematics and
+Physics, Kyoto University.<br />
+Thesis: The initial value problem for semilinear Schrödinger
+equations.<br />
+Advisor: Professor Yujiro Ohya (PDEs).</p></li>
+<li><p>23 March 1992: Master of Engineering in Applied Mathematics and
+Physics, Kyoto University.<br />
+Advisor: Professor Yujiro Ohya (PDEs).</p></li>
+<li><p>24 March 1990: Bachelor of Engineering in Aeronautical
+Engineering.<br />
+Advisor: Professor Yoshio Sone (Kinetic Theory).</p></li>
+</ul>
+<h4 id="employments">Employments</h4>
+<ul>
+<li>April 2016 - present: Professor, College of Education, University of
+the Ryukyus, Japan.</li>
+<li>April 2014 - March 2016: Professor, Institute of Mathematics,
+University of Tsukuba, Japan.</li>
+<li>October 2009 - March 2014: Professor, Department of Mathematics and
+Computer Science, Kagoshima University, Japan.</li>
+<li>April 2000 - September 2009: Associate Professor, Mathematical
+Institute, Tohoku University, Japan</li>
+<li>July 1995 - March 2000: Assistant Professor, Department of
+Mathematical Sciences, Shinshu University, Japan.</li>
+</ul>
+<h4 id="visiting-positions">Visiting Positions</h4>
+<ul>
+<li>27 September 2000 - 26 September 2001: Visiting Scholar, Department
+of Mathematics, University of Chicago, USA, hosted by Professor Carlos
+E. Kenig.</li>
+</ul>
+<h4 id="professional-activities">Professional Activities</h4>
+<ul>
+<li>June 2020 - May 2026: Reviewer of JST<a href="#fn1"
+class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>
+FOREST<a href="#fn2" class="footnote-ref" id="fnref2"
+role="doc-noteref"><sup>2</sup></a> Program.</li>
+<li>December 2019 - November 2022: Reviewer of JSPS Grants-in-Aid for
+Scientiﬁc Research.</li>
+<li>April 2015 - March 2016: Member of Editorial Board, Tsukuba Journal
+of Mathematics.</li>
+<li>December 2012 - November 2014: Reviewer of JSPS Grants-in-Aid for
+Scientiﬁc Research.</li>
+<li>January 2001 - present: Reviewer of Mathematical Reviews, American
+Mathematical Society.</li>
+</ul>
+<h4 id="scientiﬁc-or-academic-honors">Scientiﬁc or Academic Honors</h4>
+<ul>
+<li>April 2023 - March 2026: JSPS<a href="#fn3" class="footnote-ref"
+id="fnref3" role="doc-noteref"><sup>3</sup></a> Grant-in-Aid for
+Scientiﬁc Research #23K03186 , 3,700,000 JPY (23,125 USD).</li>
+<li>April 2019 - March 2022: JSPS Grant-in-Aid for Scientiﬁc Research
+#19K03569, 3,300,000 JPY (20,625 USD).</li>
+<li>April 2016 - March 2019: JSPS Grant-in-Aid for Scientiﬁc Research
+#16K05221, 3,600,000 JPY (22,500 USD).</li>
+<li>31 October 2014: Reviewer Award of JSPS Grants-in-Aid for Scientiﬁc
+Research.</li>
+<li>April 2011 - March 2015: JSPS Grant-in-Aid for Scientiﬁc Research
+#23340033, 14,000,000 JPY (87,500 USD).</li>
+<li>April 2008 - March 2011: JSPS Grant-in-Aid for Scientiﬁc Research
+#20540151, 3,500,000 JPY (21,875 USD).</li>
+<li>April 2005 - March 2008: JSPS Grant-in-Aid for Scientiﬁc Research
+#17540140, 3,200,000 JPY (20,000 USD).</li>
+<li>April 2002 - March 2005: JSPS Grant-in-Aid for Scientiﬁc Research
+#14740095, 2,400,000 JPY (15,000 USD).</li>
+<li>27 September 2000 - 26 September 2001: MEXT<a href="#fn4"
+class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a>
+Fellowship for Research Abroad.</li>
+<li>April, 2000 - September, 2000: MEXT Grant-in-Aid for Scientiﬁc
+Research #12740086, 900,000 JPY (5,625 USD).</li>
+<li>April 1996 - March 1997: MEXT Grant-in-Aid for Scientiﬁc Research
+#08740096, 700,000 JPY (4,375 USD).</li>
+</ul>
+<h4 id="memberships">Memberships</h4>
+<ul>
+<li>October 2019 - present: Society for Industrial and Applied
+Mathematics (SIAM).</li>
+<li>January 2001 - present: the American Mathematical Society
+(AMS).</li>
+<li>July 1993 - March 2021: The Mathematical Society of Japan.</li>
+</ul>
+<h4 id="refereed-papers">Refereed Papers</h4>
+<p>[14,16,19] are co-authored papers, and all the others are single
+authored. [28] is a paper on education of mathematics and computational
+thinking</p>
+<ul>
+<li>[1] <em>Local existence for the semilinear Schrödinger equations in
+one space dimension</em>, Journal of Mathematics of Kyoto University,
+<strong>34</strong> (1994), pp.353–367.</li>
+<li>[2] <em>Local existence for semilinear Schrödinger equations</em>,
+Mathematica Japonica, <strong>42</strong> (1995), pp.35–52.</li>
+<li>[3] <em>Global existence of small solutions to semilinear
+Schrödinger equations with gauge invariance</em>, Publications of
+Research Institute of Mathematical Science, <strong>31</strong> (1995),
+pp.731–753.</li>
+<li>[4] <em>Global existence of small solutions to semilinear
+Schrödinger equations</em>, Communications in Partial Differential
+Equations, <strong>21</strong> (1996), pp.63–78.</li>
+<li>[5] <em>The initial value problem for cubic semilinear Schrödinger
+equations</em>, Publications of Research Institute of Mathematical
+Science, <strong>32</strong> (1996), pp.445–471.</li>
+<li>[6] <em>The initial value problem for the elliptic-hyperbolic
+Davey-Stewartson equation</em>, Journal of Mathematics of Kyoto
+University, <strong>39</strong> (1999), pp.41–66.</li>
+<li>[7] <em>Gain of regularity for semilinear Schrödinger
+equations</em>, Mathematische Annalen, <strong>315</strong> (1999),
+pp.529–567.</li>
+<li>[8] <em>Smoothing effects of dispersive pseudodifferential
+equations</em>, Communications in Partial Differential Equations,
+<strong>27</strong> (2002), pp.1953–2005.</li>
+<li>[9] <em>The initial value problem for Schrödinger equations on the
+torus</em>, International Mathematics Research Notices,
+<strong>2002:15</strong> (2002), pp.789–820.</li>
+<li>[10] <em>The initial value problem for a third order dispersive
+equation on the two dimensional torus</em>, Proceedings of the American
+Mathematical Society, <strong>133</strong> (2005), pp.2083–2090.</li>
+<li>[11] <em>Resolvent estimates related with a class of dispersive
+equations</em>, Journal of Fourier Analysis and Applications,
+<strong>14</strong> (2008), pp.301–325.</li>
+<li>[12] <em>Gain of analyticity for semilinear Schrödinger
+equations</em>, Journal of Differential Equations, <strong>246</strong>
+(2009), pp.681–723.</li>
+<li>[13] <em>Bounded Berezin-Toeplitz operators on the Segal-Bargmann
+space</em>, Integral Equations and Operator Theory, <strong>63</strong>
+(2009), pp.321–335.</li>
+<li>[14] <em>A third order dispersive ﬂow for closed curves into almost
+Hermitian manifolds</em>, Journal of Functional Analysis,
+<strong>257</strong> (2009), pp.388–404, joint work with Eiji
+Onodera.</li>
+<li>[15] <em>Schrödinger ﬂow into almost Hermitian manifolds</em>,
+Bulletin of the London Mathematical Society, <strong>45</strong> (2013),
+pp.37–51.</li>
+<li>[16] <em>A fourth-order dispersive ﬂow into Kähler manifolds</em>,
+Zeitschrift für Analysis und ihre Anwendungen, <strong>34</strong>
+(2015), pp.221–249, joint work with Eiji Onodera.</li>
+<li>[17] <em>Fourth-order dispersive systems on the one-dimensional
+torus</em>, Journal of Pseudo-Differential Operators and Applications,
+<strong>6</strong> (2015), pp.237–265.</li>
+<li>[18] <em>Holomorphic Hermite functions and ellipses</em>, Integral
+Transforms and Special Functions, <strong>28</strong> (2017),
+pp.605–615.</li>
+<li>[19] <em>Hermite expansions of some tempered distributions</em>,
+Journal of Pseudo-Differential Operators and Applications,
+<strong>9</strong> (2018), pp.105–124, joint work with Takashi Furuya
+and Takumi Koshikawa.</li>
+<li>[20] <em>Holomorphic Hermite functions in Segal-Bargmann
+spaces</em>, Complex Analysis and Operator Theory, <strong>13</strong>
+(2019), pp.351–374.</li>
+<li>[21] <em>Bargmann-type transforms and modiﬁed harmonic
+oscillators</em>, Bulletin of the Malaysian Mathematical Sciences
+Society, <strong>43</strong> (2020), pp.1719–1740.</li>
+<li>[22] <em>Inversion of seismic-type Radon transforms on the
+plane</em>, Integral Transforms and Special Functions,
+<strong>31</strong> (2020), pp.998–1009.</li>
+<li>[23] <em>Inversion of higher dimensional Radon transforms of
+seismic-type</em>, Vietnam Journal of Mathematics, <strong>49</strong>
+(2021), pp.1185-1198.</li>
+<li>[24] <em>Bargmann transform on the space of hyperplanes</em>,
+Journal of Fourier Analysis and Applications, <strong>28</strong>
+(2022), article No.72, 21 pages.</li>
+<li>[25] <em>Microlocal analysis of <span
+class="math inline">\(d\)</span>-plane transform on the Euclidean
+space</em>, SIAM Journal on Mathematical Analysis, <strong>54</strong>
+(2022), pp.6254-6287.</li>
+<li>[26] <em>Microlocal analysis of double ﬁbration transforms with
+conjugate points</em>, Journal of Geometric Analysis,
+<strong>36</strong> (2026), Article No.68, 22 pages.</li>
+<li>[27] <em>Geodesic X-ray transform and streaking artifacts on simple
+surfaces or on spaces of constant curvature</em>, Vietnam Journal of
+Mathematics, published online, 50 pages.</li>
+<li>[28] <em>Implementing computational thinking in primary and
+secondary mathematics</em>, The Mathematician Educator, accepted for
+publication.</li>
+</ul>
+<h4 id="preprints-of-mathematics">Preprints of Mathematics</h4>
+<ul>
+<li>[29] <em>The symbol of the normal operator for the <span
+class="math inline">\(d\)</span>-plane transform on the Euclidean
+space</em>, arXiv:2412:18197, 5 pages.</li>
+</ul>
+<h4 id="refereed-conference-papers-of-mathematics">Refereed Conference
+Papers of Mathematics</h4>
+<ul>
+<li>[30] <em>The initial value problem for semilinear Schrödinger
+equations</em>, GAKUTO International Series in Mathematical Sciences and
+Applications, <strong>10</strong> (1997), pp.19-24.</li>
+<li>[31] <em>Smoothing effects of dispersive pseudodifferential
+equations</em>, Report, Mathematisches Forschungsinstitut Oberwolfach,
+<strong>20</strong> (2002), pp.2–3.</li>
+</ul>
+<h4 id="translation-into-japanese">Translation into Japanese</h4>
+<p>I, along with Hitoshi ARAI (Waseda University), Mitsuru SUGIMOTO
+(Nagoya University), and Hiroyuki TAKAGI (deceased), have translated the
+Princeton Lectures in Analysis Vol.1-4 by Elias M. Stein and Rami
+Shakarchi into Japanese and published them through Nippon Hyoron Sha,
+co., Ltd.</p>
+<ol type="1">
+<li>“Fourier Analysis: An Introduction,” Princeton University Press
+(2003), Japanese translation (2007).</li>
+<li>“Complex Analysis,” Princeton University Press (2003), Japanese
+translation (2009).</li>
+<li>“Real Analysis: Measure Theory, Integration, and Hilbert Spaces,”
+Princeton University Press (2005), Japanese translation (2017).</li>
+<li>“Functional Analysis: Introduction to Further Topics in Analysis,”
+Princeton University Press (2012), Japanese translation (2024).</li>
+</ol>
+<h4 id="recent-talks">Recent Talks</h4>
+<ol type="1">
+<li><p>3 June - 6 June 2024, <em>Geodesic X-ray transform and streaking
+artifacts on simple surfaces or on spaces of constant curvature</em>,
+International Conference on Analysis and Applications, City University
+of Hong Kong, Hong Kong SAR.</p></li>
+<li><p>26 August - 30 August 2024, <em>Geodesic X-ray transform and
+streaking artifacts on simple surfaces or on spaces of constant
+curvature</em>, Finland-Japan Workshop in Industrial and Applied
+Mathematics, University of Helsinki, Finland.</p></li>
+<li><p>9 December - 13 December 2024, <em>Geodesic X-ray transform and
+streaking artifacts on simple surfaces or on spaces of constant
+curvature</em>, Joint meeting of the NZMS, AustMS and AMS, Session
+“Microlocal Analysis and Inverse Problems”, University of
+Auckland.</p></li>
+<li><p>28 July - 1 August 2025, <em>Microlocal analysis of double
+ﬁbration transforms with conjugate points</em>, AIP 2025 (12th Applied
+Inverse Problems Conference), Session “Integral geometry, rigidity and
+geometric inverse problems”, FGV EMAp - Escola de Matemática Aplicada,
+Rio de Janeiro, invited.</p></li>
+<li><p>13 - 16 December 2025, <em>Computational explorations in modern
+number theory: the Green - Tao theorem and the abc conjecture</em>, ATCM
+2025 (The 30th Asian Technology Conference in Mathematics), Ateneo de
+Manila University, Quezon, Philippines.</p>
+<ul>
+<li>GitHub: ATCM2025, <a
+href="https://github.com/fiomfd/ATCM2025">https://github.com/fiomfd/ATCM2025)</a>.</li>
+<li>Google Colab: ATCM2025, <a
+href="https://colab.research.google.com/github/fiomfd/ATCM2025/">https://colab.research.google.com/github/fiomfd/ATCM2025/</a>.</li>
+</ul></li>
+<li><p>14 - 16 January 2026, <em>Normal operators of double ﬁbration
+transforms</em>, Inverse problems for partial differential equations and
+related areas, RIMS, Kyoto University, Kyoto, invited.</p></li>
+<li><p>15 - 19 June 2026, <em>Normal operators of double ﬁbration
+transforms</em>, Session “Inverse Problem and Applications,” PRCM 2026
+(10th Paciﬁc Rim Conference on Mathematics), Academia Sinica, Taipei,
+invited.</p></li>
+<li><p>31 October - 2 November 2026, <em>Normal operators of double
+ﬁbration transforms</em>, Sino-Franco-Japanese Joint Workshop - Spectral
+Methods in Partial Differential Equations, Nanjing University of
+Aeronautics and Astronautics, Nanjing, invited.</p></li>
+</ol>
+<h4 id="ph.d-students-supervised">Ph.D Students supervised</h4>
+<ul>
+<li><!-- Ryuichiro MIZUHARA (Doctor of Science, Tohoku University, March, 2005), 
+*The initial value problem for one-dimensional dispersive partial differential equations*. --></li>
+<li><!-- Eiji ONODERA (Doctor of Science, Tohoku University, September, 2008), 
+*Geometric analysis of dispersive ﬂows*.--></li>
+<li><!-- Koichi KAIZUKA (Doctor of Science, Tohoku University, March, 2011), 
+*Smoothing effects for dispersive equations on symmetric spaces*. --></li>
+</ul>
+<h4 id="teaching-experience">Teaching Experience</h4>
+<ul>
+<li>University of the Ryukyus
+<ul>
+<li>Elementary Number Theory for non-math majors (2016 - present).</li>
+<li>Linear Algebra for non-math majors (2016 - present).</li>
+<li>Calculus for mathematics education majors (2016 - present).</li>
+<li>Ordinary Differential Equations and Fourier Analysis for mathematics
+education majors (2019, 2020, 2023, 2025).</li>
+<li>Exercise in visualization and experiments of mathematics for
+mathematics education majors (2024).</li>
+<li>Complex Analysis for mathematics education majors (2018).</li>
+<li>Advanced Calculus for mathematics education majors (2018).</li>
+</ul></li>
+<li>University of Tsukuba
+<ul>
+<li>Colloquium Talk for graduate students of science and engineering
+(2015).</li>
+<li>Complex Analysis for math majors (2015).</li>
+<li>Ordinary Differential Equations for math majors (2014, 2015).</li>
+<li>Advanced Fourier Analysis for graduate students of math (2014,
+2015).</li>
+<li>Partial Differential Equations for graduate students of math (2014,
+2015).</li>
+<li>Calculus for math majors (2014).</li>
+<li>Linear Algebra for non-math majors (2014).</li>
+<li>crash course: Dispersive Partial Differential Equations for graduate
+students of mathematics (2003).</li>
+</ul></li>
+<li>Kochi University
+<ul>
+<li>crash course: Fourier Analysis for math majors (2016, 2020).</li>
+<li>crash course: Ordinary Differential Equations for math majors
+(2012).</li>
+</ul></li>
+<li>Kagoshima University
+<ul>
+<li>Calculus for math majors (2011 - 2012)</li>
+<li>Advanced Calculus (2010 - 2012).</li>
+<li>Fourier Analysis for math majors (2011 - 2013).</li>
+<li>Lebesgue Integration and Functional Analysis (2011 - 2013).</li>
+<li>Calculus for non-math majors (2009 - 2013).</li>
+<li>Linear Algebra for non-math majors (2009 - 2011)</li>
+</ul></li>
+<li>Tohoku University
+<ul>
+<li>Advanced Calculus for math majors (2001).</li>
+<li>Vector Calculus for math majors (2003, 2004, 2005, 2009).</li>
+<li>Fourier Analysis for math majors (2006, 2008).</li>
+<li>Measure and Integration for math majors (2002, 2007).</li>
+<li>Real Analysis for math majors (2002, 2007).</li>
+<li>Pseudodifferential Operators and Applications for graduate students
+of math (2001, 2005).</li>
+<li>Microlocal and Semiclassical Analysis for graduate students of math
+(2008).</li>
+<li>Calculus for science majors (2007, 2008)</li>
+<li>Linear Algebra for science majors (2001).</li>
+<li>Ordinary Differential Equations for science majors (2003, 2004,
+2005, 2009).</li>
+<li>Complex Analysis for science majors (2006).</li>
+<li>Calculus for non-math majors (2003).</li>
+<li>Elementary Statistics for non-math majors (2000)</li>
+<li>Mathematics for International Students (2003 - 2006).</li>
+</ul></li>
+<li>Shinshu University
+<ul>
+<li>Functional Analysis for math majors (1997, 1999).</li>
+<li>Ordinary Differential Equations for math majors (1997, 1999).</li>
+<li>Theory of Distributions for graduate students of math (1996,
+1998).</li>
+<li>Partial Differential Equations for graduate students of math (1996,
+1998).</li>
+<li>Calculus for non-math majors (1996).</li>
+</ul></li>
+</ul>
+<h4 id="administrative-work">Administrative Work</h4>
+<p>As a general rule, the applicant will omit information regarding his
+experience on implementing entrance examinations and personnel
+committees.</p>
+<ul>
+<li>University of the Ryukyus
+<ul>
+<li>Chair of Department of Mathematics Education (2018-2019,
+2026-).</li>
+<li>Member of the University Library Committee of the University
+selected from College of Education (2023-2026).</li>
+<li>Member of the Teaching Practice Committee of the College of
+Education selected from Department of Mathematics Education
+(2020-2023).</li>
+<li>Member of the International Student Committee of the University
+selected from College of Education (2019-2020).</li>
+<li>Member of the Entrance Examination Committee of College of Education
+selected from Department of Mathematics Education (2016-2017,
+2024-2025).</li>
+<li>Supervisor of Mathematics Education Majors (2016-2019, 2021-2024,
+2026-).</li>
+</ul></li>
+<li>University of Tsukuba
+<ul>
+<li>Member of the Academic Affairs Committee of the University selected
+from Institute of Mathematics (2015).</li>
+</ul></li>
+<li>Kagoshima University
+<ul>
+<li>Chair of Mathematics Division, Entrance Examination Committee of the
+University (2013).</li>
+<li>Chair of Department of Mathematics and Computer Science (2012).</li>
+<li>Member of the Entrance Examination Committee of the Faculty of
+Science selected from Department of Mathematics and Computer Science
+(2010-2011).</li>
+<li>Supervisor of math majors (2011-2013).</li>
+</ul></li>
+</ul>
+<h4 id="references">References</h4>
+<ul>
+<li><!-- Professor Jenn-Nan WANG, National Taiwan University, jnwang@math.ntu.edu.tw --></li>
+<li><!-- Professor Setsuro FUJIIÉ, Ritsumeikan University, fujiie@fc.ritsumei.ac.jp --></li>
+</ul>
+<div style="text-align: right;">
+That is all.
+</div>
+<section id="footnotes" class="footnotes footnotes-end-of-document"
+role="doc-endnotes">
+<hr />
+<ol>
+<li id="fn1"><p>Japan Science and Technology Agency<a href="#fnref1"
+class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Fusion Oriented Research for Disruptive Science and
+Technology<a href="#fnref2" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>JSPS is Japan Society for the Promotion of Science,
+which is an organization of the Government of Japan.<a href="#fnref3"
+class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>MEXT is Ministry of Education, Culture, Sports, Science
+and Technology, the Government of Japan.<a href="#fnref4"
+class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+</body>
+</html>

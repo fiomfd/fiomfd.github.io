@@ -13,6 +13,6 @@
 
 この活動に関連して得られた雑学レベルの知見を日本語でまとめた文書をこちらに置くことにします。
 
-- 122926 [シンガポールの教育制度]((https://mathed.github.io/mathed/sg-system))
-- 123026 [シンガポールの中学後半とJCの数学と物理の教科書](https://mathed.github.io/mathed/sg-textbooks)
-- 123126 [2026年12月の中央教育審議会答申](https://mathed.github.io/mathed/mext-2026)
+- 122926 [シンガポールの教育制度]((https://fiomfd.github.io/mathed/sg-system))
+- 123026 [シンガポールの中学後半とJCの数学と物理の教科書](https://fiomfd.github.io/mathed/sg-textbooks)
+- 123126 [2026年12月の中央教育審議会答申](https://fiomfd.github.io/mathed/mext-2026)

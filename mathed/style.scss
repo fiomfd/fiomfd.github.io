@@ -1,13 +1,22 @@
----
----
 @import "{{ site.theme }}";
 
-/* 一番上の自動生成タイトル（Hiroyuki Chihara）を非表示にする */
-.markdown-body > h1:first-child {
+.markdown-body > h1:first-child,
+.footer {
   display: none;
 }
 
-/* 一番下の「This site is open source. Improve this page.」も消す場合 */
-.footer {
-  display: none;
+body {
+  background-color: #111111;
+  color: #e6e6e6;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3 {
+  color: #ffffff;
+  border-bottom-color: #333333;
+}
+
+.markdown-body a {
+  color: #58a6ff;
 }

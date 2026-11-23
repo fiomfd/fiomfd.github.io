@@ -1,0 +1,13 @@
+---
+---
+@import "{{ site.theme }}";
+
+/* 一番上の自動生成タイトル（Hiroyuki Chihara）を非表示にする */
+.markdown-body > h1:first-child {
+  display: none;
+}
+
+/* 一番下の「This site is open source. Improve this page.」も消す場合 */
+.footer {
+  display: none;
+}

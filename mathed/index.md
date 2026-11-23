@@ -4,7 +4,7 @@
 
 [千原浩之](https://fiomfd.github.io/)
 
-2025年8月から <font color=yellow>"Mathematics and Computational Thinking" Education</font> と勝手に呼んでいる分野の研究を細々と行っていますが、研究業績は以下の通りです：
+2025年8月から "Mathematics and Computational Thinking" Education と勝手に呼んでいる分野の研究を細々と行っていますが、研究業績は以下の通りです：
 
 - 国際研究集会の一般講演：13 - 16 December 2025, *Computational explorations in modern number theory: the Green - Tao theorem and the abc conjecture*, ATCM 2025 (The 30th Asian Technology Conference in Mathematics), Ateneo de Manila University, Quezon, Philippines.
    - GitHub: ATCM2025, [https://github.com/fiomfd/ATCM2025)](https://github.com/fiomfd/ATCM2025).
